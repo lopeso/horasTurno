@@ -1,3 +1,27 @@
+Basta coloca-lo na pasta do servidor,
+alterar no arquivo App/Config/App.php
+public string $baseURL = 'http://local.horatrabalhada.com';
+
+
+configurar virtual hosts windows:
+pasta 
+C:\Windows\System32\drivers\etc
+adcionar linha
+127.0.0.1		local.horatrabalhada.com
+
+C:\xampp\apache\conf\extra\httpd-vhosts.conf
+adcionar:
+<VirtualHost *:80>
+    ServerAdmin webmaster@local.horatrabalhada.com
+    DocumentRoot "C:/xampp/htdocs/horasTurno/public"
+    ServerName local.horatrabalhada.com
+    ErrorLog "logs/horatrabalhada.com-error.log"
+    CustomLog "logs/horatrabalhada.com-access.log" common
+</VirtualHost>
+
+
+REQUISITOS:
+
 # CodeIgniter 4 Framework
 
 ## What is CodeIgniter?
@@ -57,3 +81,4 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 - json (enabled by default - don't turn it off)
 - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
 - [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+
