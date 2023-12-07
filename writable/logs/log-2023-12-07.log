@@ -1,0 +1,279 @@
+CRITICAL - 2023-12-07 13:34:14 --> syntax error, unexpected single-quoted string ", $data) . ;", expecting ")"
+in APPPATH\Controllers\Horatrabalhada.php on line 74.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/pegaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/pegaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/pegaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 13:34:26 --> syntax error, unexpected token ";"
+in APPPATH\Controllers\Horatrabalhada.php on line 39.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/pegaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/pegaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/pegaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 13:34:40 --> view(): Argument #2 ($data) must be of type array, string given, called in C:\xampp\htdocs\horasTurno\app\Controllers\Horatrabalhada.php on line 39
+in SYSTEMPATH\Common.php on line 1178.
+ 1 APPPATH\Controllers\Horatrabalhada.php(39): view('NavBar', 'output_hora', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 13:40:37 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\Horatrabalhada.php on line 29.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/pegaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/pegaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/pegaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 13:46:50 --> Call to undefined method CodeIgniter\I18n\Time::getHours()
+in APPPATH\Controllers\Horatrabalhada.php on line 67.
+ 1 APPPATH\Controllers\Horatrabalhada.php(24): App\Controllers\HoraTrabalhada->analisaHora(Object(CodeIgniter\I18n\Time), Object(CodeIgniter\I18n\Time))
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 13:49:28 --> syntax error, unexpected token ":", expecting "," or ";"
+in APPPATH\Controllers\Horatrabalhada.php on line 71.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/pegaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/pegaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/pegaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 13:50:21 --> syntax error, unexpected token ":", expecting "," or ";"
+in APPPATH\Controllers\Horatrabalhada.php on line 71.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/pegaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/pegaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/pegaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 14:00:19 --> Undefined variable $horaEntradagetHour
+in APPPATH\Controllers\Horatrabalhada.php on line 60.
+ 1 APPPATH\Controllers\Horatrabalhada.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $horaEntradagetHour', 'C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\Horatrabalhada.php', 60)
+ 2 APPPATH\Controllers\Horatrabalhada.php(24): App\Controllers\HoraTrabalhada->analisaHora(Object(CodeIgniter\I18n\Time), Object(CodeIgniter\I18n\Time))
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 14:03:15 --> Undefined variable $hora
+in APPPATH\Views\output_hora.php on line 25.
+ 1 APPPATH\Views\output_hora.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hora', 'C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_hora', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(41): view('output_hora', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 14:03:51 --> Undefined variable $diferencaMinutos
+in APPPATH\Views\output_hora.php on line 25.
+ 1 APPPATH\Views\output_hora.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $diferencaMinutos', 'C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_hora', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(41): view('output_hora', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 14:04:12 --> Undefined variable $minutos
+in APPPATH\Views\output_hora.php on line 25.
+ 1 APPPATH\Views\output_hora.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $minutos', 'C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_hora', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(41): view('output_hora', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 14:20:59 --> syntax error, unexpected token "return", expecting "function" or "const"
+in APPPATH\Controllers\Horatrabalhada.php on line 82.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/pegaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/pegaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/pegaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 14:21:44 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Horatrabalhada.php on line 91.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/pegaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/pegaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/pegaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 14:22:16 --> Object of class CodeIgniter\I18n\Time could not be converted to int
+in APPPATH\Controllers\Horatrabalhada.php on line 94.
+ 1 APPPATH\Controllers\Horatrabalhada.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class CodeIgniter\\I18n\\Time could not be converted to int', 'C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\Horatrabalhada.php', 94)
+ 2 APPPATH\Controllers\Horatrabalhada.php(70): App\Controllers\HoraTrabalhada->classificaHora(Object(CodeIgniter\I18n\Time))
+ 3 APPPATH\Controllers\Horatrabalhada.php(24): App\Controllers\HoraTrabalhada->analisaHora(Object(CodeIgniter\I18n\Time), Object(CodeIgniter\I18n\Time))
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 14:22:55 --> Trying to access array offset on value of type null
+in APPPATH\Views\output_hora.php on line 9.
+ 1 APPPATH\Views\output_hora.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php', 9)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_hora', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(41): view('output_hora', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 14:23:59 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\Horatrabalhada.php on line 91.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/pegaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/pegaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/pegaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 14:24:16 --> Unmatched '}'
+in APPPATH\Controllers\Horatrabalhada.php on line 121.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/pegaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/pegaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/pegaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 14:24:38 --> Unmatched '}'
+in APPPATH\Controllers\Horatrabalhada.php on line 115.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/pegaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/pegaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/pegaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 14:28:32 --> Can't use method return value in write context
+in APPPATH\Controllers\Horatrabalhada.php on line 78.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-07 14:40:03 --> Undefined variable $totalMinutosNoturnas
+in APPPATH\Controllers\Horatrabalhada.php on line 94.
+ 1 APPPATH\Controllers\Horatrabalhada.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalMinutosNoturnas', 'C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\Horatrabalhada.php', 94)
+ 2 APPPATH\Controllers\Horatrabalhada.php(24): App\Controllers\HoraTrabalhada->analisaHora(Object(CodeIgniter\I18n\Time), Object(CodeIgniter\I18n\Time))
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 14:40:28 --> Undefined variable $totalMinutosDiurnas
+in APPPATH\Controllers\Horatrabalhada.php on line 95.
+ 1 APPPATH\Controllers\Horatrabalhada.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalMinutosDiurnas', 'C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\Horatrabalhada.php', 95)
+ 2 APPPATH\Controllers\Horatrabalhada.php(24): App\Controllers\HoraTrabalhada->analisaHora(Object(CodeIgniter\I18n\Time), Object(CodeIgniter\I18n\Time))
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 14:41:14 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\Horatrabalhada.php on line 103.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/pegaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/pegaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/pegaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 14:45:29 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\Horatrabalhada.php on line 87.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/pegaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/pegaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/pegaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 14:45:37 --> Trying to access array offset on value of type null
+in APPPATH\Views\output_hora.php on line 9.
+ 1 APPPATH\Views\output_hora.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php', 9)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_hora', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(41): view('output_hora', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 14:45:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\output_hora.php on line 9.
+ 1 APPPATH\Views\output_hora.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php', 9)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_hora', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(41): view('output_hora', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 15:07:49 --> Undefined variable $hora
+in APPPATH\Views\output_hora.php on line 27.
+ 1 APPPATH\Views\output_hora.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hora', 'C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_hora', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(41): view('output_hora', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 15:10:14 --> syntax error, unexpected token "echo"
+in APPPATH\Controllers\Horatrabalhada.php on line 90.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/pegaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/pegaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/pegaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 15:14:37 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\Horatrabalhada.php on line 108.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/pegaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/pegaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/pegaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 15:26:05 --> Can't use method return value in write context
+in APPPATH\Controllers\Horatrabalhada.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-07 15:26:14 --> Can't use method return value in write context
+in APPPATH\Controllers\Horatrabalhada.php on line 80.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-07 15:31:33 --> Undefined variable $totalMinutosDiurnos
+in APPPATH\Views\output_hora.php on line 25.
+ 1 APPPATH\Views\output_hora.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalMinutosDiurnos', 'C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_hora', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(41): view('output_hora', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 15:33:23 --> syntax error, unexpected token "=>", expecting "]"
+in APPPATH\Controllers\Horatrabalhada.php on line 98.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/pegaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/pegaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/pegaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 15:34:11 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\Horatrabalhada.php on line 29.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/pegaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/pegaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/pegaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 15:34:25 --> Undefined variable $data
+in APPPATH\Controllers\Horatrabalhada.php on line 41.
+ 1 APPPATH\Controllers\Horatrabalhada.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\Horatrabalhada.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -16,15 +16,15 @@
     
     echo  '<br>'. $horaEntradaView->getHour() . ":" .  $horaEntradaView->getMinute();
     echo  '<br>'. $horaSaidaView->getHour() . ":" .  $horaEntradaView->getMinute() . '<br>';
-    $hora = $horaEntradaView->getHour() - $horaSaidaView->getHour();
-    $minutos = $horaEntradaView->getMinute() - $horaSaidaView->getMinute();
+   // $hora = $horaEntradaView->getHour() - $horaSaidaView->getHour();
+    //$minutos = $horaEntradaView->getMinute() - $horaSaidaView->getMinute();
     
 //   while($hora != 0){
 //         echo "tempo gasto: " . $hora . ":" . $minutos;
 //         $hora--;
-
+	//echo $totalMinutosDiurnos;
 //    }
-    echo "tempo gasto: " . $hora . ":" . $minutos;
+   // echo "tempo gasto: " . $hora . ":" . $minutos;
    
     // var_dump($intervaloView);
     
