@@ -40,12 +40,12 @@ class HoraTrabalhada extends Controller
                     'registros' =>        $this->read_registros()	
                 ]; 
             
-            echo(View('navBar'));      
+            echo view('navBar');      
             //echo(View('input_hora'));
             echo view('output_hora', $data);
             //echo (view('page_analise', $data));    
 		
-         return 	$data;
+         return $data;
 
             
                              		
@@ -63,10 +63,9 @@ class HoraTrabalhada extends Controller
             $diferencaHoras = $horaSaida->diff($horaEntrada);
             $diferencaHoras = $diferencaHoras->h . ":" . $diferencaHoras->i .":". $diferencaHoras->s;
             
-            $diferencaMinutos = $horaSaida->diff($horaEntrada);
+            //$diferencaMinutos = $horaSaida->diff($horaEntrada);
             $analisaHoras = $this->analisaHora($horaEntrada, $horaSaida);
             $horasDiurnas = $analisaHoras['totalHorasDiurnas'] . ":". $analisaHoras['totalMinutosDiurnos'];
-        
             $horasNoturnas = $analisaHoras['totalHorasNoturnas'] . ":" . $analisaHoras['totalMinutosNoturnos']; 
             
             //var_dump($horasDiurnas);
@@ -107,7 +106,7 @@ class HoraTrabalhada extends Controller
     }
 
     public function read_registros(){
-        $model = model(Turno::Class);
+        $model = model(Turno::Class); //cria o objeto time para possibilitar operações na view
         $data['registro'] = $model->getTurno();
             return view('registro_output', $data);
         }
@@ -158,17 +157,14 @@ class HoraTrabalhada extends Controller
 				if ($horaAtual->getHour() >= $inicioNoturno || $horaAtual->getHour() <$fimNoturno) {
 						$totalHorasNoturnas++;
 						//echo $horaAtual . ': Noturna ';		
-				
                 
                     } else {		
 						  
 						$totalHorasDiurnas++;
-                       // echo $horaAtual . ': diurna';
-						 
+                       // echo $horaAtual . ': diurna'; 
 				}
 				
 				 if($horaAtual->getHour() == $horaSaida->getHour()){
-							
 							$totalHorasDiurnas--;
 				// 			//echo "mmm";
 						
@@ -198,25 +194,27 @@ class HoraTrabalhada extends Controller
     }
 
   
-    public function classificaHora($horarioInicial, $horarioFinal){
-            while($horarioFinal->getHour()){
+//     public function classificaHora($horarioInicial, $horarioFinal){
+//         $horaAtual = $horarioInicial->getHour();
 
-            }
-            $horarioNoturno = 0;
-            $horarioDiurno = 0;
-            $hora = $hora->getHour();
-            if($hora >22 || $hora <5){
-                return $horarioNoturno++;
-            }else{
-                return $horarioDiurno++;
-        }
+//         while($horarioAtual->getHour() =! $horarioFinal->getHour()){
+//             echo $horarioAtual;
+//         }
+//             $horarioNoturno = 0;
+//             $horarioDiurno = 0;
+//             $hora = $hora->getHour();
+//             if($hora >22 || $hora <5){
+//                 return $horarioNoturno++;
+//             }else{
+//                 return $horarioDiurno++;
+//         }
 	
         
-    }
+//     }
+// }
+    
+    
 }
-    
-    
- 
    
  
     

@@ -1,13 +1,13 @@
 <div class=" center container row white z-depth-1" >
-    <div class="col s2">
+    <!-- <div class="col s2">
         <p>id</p>
-    </div>
+    </div> -->
 <!--//hora entras -->
-    <div class="col s2">
+    <div class="col s3">
         <p>Entrada</p>
     </div>
 <!--//hora saida -->
-    <div class="col s2">
+    <div class="col s3">
         <p>Saida </p>
     </div>
     <!--//hora noturnas-->
@@ -29,14 +29,16 @@
 <?php foreach($registro as $registros){ 
     if($registro){?>
     <div class="center container row white z-depth-1" >     
-      <div class="col s2">
+      <!-- <div class="col s2"> -->
       <?php  
-            echo $registros['id']; ?>
-        </div>
-        <div class="col s2">
+        //    echo $registros['id']; ?>
+        
+<!--         
+    </div> -->
+        <div class="col s3">
             <?php echo $registros['horaEntrada'];?>
         </div>
-        <div class="col s2">
+        <div class="col s3">
         <?php echo $registros['HoraSaida']; ?>
         </div>
         <div class="col s3">

@@ -2030,3 +2030,32 @@ in APPPATH\Controllers\Horatrabalhada.php on line 150.
  5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
  6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 18:20:15 --> Can't use method return value in write context
+in APPPATH\Controllers\Horatrabalhada.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-08 18:20:16 --> Can't use method return value in write context
+in APPPATH\Controllers\Horatrabalhada.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-08 18:21:05 --> Can't use method return value in write context
+in APPPATH\Controllers\Horatrabalhada.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-08 18:21:36 --> Can't use method return value in write context
+in APPPATH\Controllers\Horatrabalhada.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-08 18:31:16 --> Can't use method return value in write context
+in APPPATH\Controllers\Horatrabalhada.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-08 18:31:38 --> Unclosed '{' on line 10
+in APPPATH\Controllers\Horatrabalhada.php on line 220.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/pegaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/pegaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/pegaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-08 19:00:05 --> Too few arguments to function App\Controllers\HoraTrabalhada::save_registro(), 0 passed in C:\xampp\htdocs\horasTurno\system\CodeIgniter.php on line 942 and exactly 2 expected
+in APPPATH\Controllers\Horatrabalhada.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

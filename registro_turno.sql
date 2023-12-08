@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 08-Dez-2023 às 10:02
+-- Tempo de geração: 08-Dez-2023 às 19:57
 -- Versão do servidor: 10.4.32-MariaDB
 -- versão do PHP: 8.2.12
 
@@ -37,6 +37,15 @@ CREATE TABLE `registro_turno` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Extraindo dados da tabela `registro_turno`
+--
+
+INSERT INTO `registro_turno` (`id`, `horaEntrada`, `HoraSaida`, `HorasDiurnas`, `HorasNoturnas`, `TotalTurno`) VALUES
+(389, '15:00:00', '23:00:00', '07:00:00', '01:00:00', '08:00:00'),
+(390, '19:03:00', '06:59:00', '04:00:00', '07:00:00', '12:04:00'),
+(391, '23:59:00', '08:02:00', '03:00:00', '06:00:00', '15:57:00');
+
+--
 -- Índices para tabelas despejadas
 --
 
@@ -54,7 +63,7 @@ ALTER TABLE `registro_turno`
 -- AUTO_INCREMENT de tabela `registro_turno`
 --
 ALTER TABLE `registro_turno`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=392;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
