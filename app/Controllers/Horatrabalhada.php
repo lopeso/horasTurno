@@ -139,6 +139,7 @@ class HoraTrabalhada extends Controller
 			//echo 'treta';
 		}
 		
+        $totalMinutosDiurnos= 
 		
 		//echo $hora;
 		//echo $minutos

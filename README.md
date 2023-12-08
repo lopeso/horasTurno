@@ -19,6 +19,7 @@ adcionar:
     CustomLog "logs/horatrabalhada.com-access.log" common
 </VirtualHost>
 
+Importar também o SQL que está aqui também. 
 
 REQUISITOS:
 
