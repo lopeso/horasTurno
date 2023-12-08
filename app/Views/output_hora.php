@@ -1,14 +1,39 @@
-<div class="col s4">
-    <?php 
+<br>
+<div class="row container white  valign-wrapper z-depth-2">
+        
+        <div class="col s4">
+            <p>Hora Entrada: <?= $horaEntradaView->toTimeString() ?></p>
+            <p>Hora Saida: <?= $horaSaidaView->toTimeString() ?> </p>
+        </div> 
+        <div class="col s4">
+            <p>Horas Diurnas: <?= $resultadoView['totalHorasDiurnas'] ?> horas e <?= $resultadoView['totalMinutosDiurnos'] ?> minutos</p>
+	        <p>Horas Noturnas: <?= $resultadoView['totalHorasNoturnas'] ?> horas e <?= $resultadoView['totalMinutosNoturnos'] ?> minutos</p>
+        </div>
+              
+        <div class="col s4 center">
+            <?php
+            //echo $saved;
+         
+             echo form_open('horaTrabalhada/save_registro/'.$horaEntradaView->toTimeString() . '/' . $horaSaidaView->toTimeString()  ); 
+                    $data = [
+                    'name'      => 'submit',
+                    'value'     => 'Registrar!',
+                    'class'      => 'btn'
+                    
+                ];
+                echo form_submit($data) ;
+                echo form_close();
+            
+            ?>
+        </div>
+        
 
- 
-    echo "hora Entrada -> " . $horaEntradaView->toTimeString() . "<br>";
-    echo "Hora Saída ->" . $horaSaidaView->toTimeString() ;
+    <?php
+  
    // echo "<br>Foram " . $intervaloView->h . " horas e " .$intervaloView->i . "minutos <br>" ;
- ?>   
-    <p>Total de Horas Diurnas: <?= $resultadoView['totalHorasDiurnas'] ?> horas e <?= $resultadoView['totalMinutosDiurnos'] ?> minutos</p>
-	<p>Total de Horas Noturnas: <?= $resultadoView['totalHorasNoturnas'] ?> horas e <?= $resultadoView['totalMinutosNoturnos'] ?> minutos</p>
-
+    
+    ?>   
+    
  <?php   
 	//echo "<br>diferenca Horas: " . $resultadoView['diferencaHoras'];
     //echo "<br>diferenca Minutos: " . $resultadoView['diferencaMinutos'];
@@ -32,6 +57,4 @@
     
    
     ?>
-</div>
-</div>
 </div>

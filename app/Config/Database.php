@@ -3,7 +3,7 @@
 namespace Config;
 
 use CodeIgniter\Database\Config;
-
+use App\Models\Turno;
 /**
  * Database Configuration
  */
@@ -27,7 +27,7 @@ class Database extends Config
     public array $default = [
         'DSN'          => '',
         'hostname'     => 'localhost',
-        'username'     => '',
+        'username'     => 'root',
         'password'     => '',
         'database'     => '',
         'DBDriver'     => 'MySQLi',
