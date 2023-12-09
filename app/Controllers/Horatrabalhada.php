@@ -32,10 +32,10 @@ class HoraTrabalhada extends Controller
            
           //  echo var_dump($horaEntrada, $horaSaida) . "<br>";
 			$intervalo = $horaEntrada->diff($horaSaida);
-
+            $treta = $this->analisaHora($horaEntrada, $horaSaida);
             $data = ['horaEntradaView' => $horaEntrada,
                     'horaSaidaView' =>    $horaSaida, 
-                    'intervaloView' =>    $intervalo ,
+                    'intervaloView' =>    $intervalo,
                     'resultadoView' =>    $this->analisaHora($horaEntrada, $horaSaida),
                     'registros' =>        $this->read_registros()	
                 ]; 
@@ -72,7 +72,7 @@ class HoraTrabalhada extends Controller
             $treta= $model->save([
                 'horaEntrada'  => $horaEntrada->toDateTimeString(),
                 'HoraSaida'  => $horaSaida->toDateTimeString(),
-                'TotalTurno' => $diferencaHoras,
+                'TotalTurno' => $analisaHoras['diferencaHoras'],
                 'HorasDiurnas' =>  $horasDiurnas,
                 'HorasNoturnas' => $horasNoturnas
                 //'HorasNoturnas' =>  $horaEntrada->subHours
@@ -90,8 +90,6 @@ class HoraTrabalhada extends Controller
 					//view('output_hora', $data) ;
                     //view('output_hora', $data) .
                     view('registro_output', $data);
-                   
-
                              		
         }
         else
@@ -116,74 +114,46 @@ class HoraTrabalhada extends Controller
         $horarioInicial = new Time($horaEntrada);
         $horarioFinal = new Time($horaSaida);
 		//define parametros do início e fim do turno no
-        $inicioNoturno = 22;
-        $fimNoturno = 5;
-		$totalHorasNoturnas = 0;
-        $totalHorasDiurnas = 0;
-		$totalMinutosDiurnos = 0;
-		$totalMinutosNoturnos = 0;
-		$controle = 0;
-        // Calcula a diferença total em horas
         $diferencaHoras = $horarioInicial->difference($horarioFinal)->getHours();
-        $diferencaMinutos = $horarioInicial->difference($horarioFinal)->getMinutes();
-    
-		//verifica valores 
-		$hora = $horaEntrada->getHour() - $horaSaida->getHour();
-		$minutos = $horaEntrada->getMinute() - $horaSaida->getMinute();
-		//echo $minutos;
-        // Ajusta a diferença se for negativa (hora de entrada maior que hora de saída)
-		
-         if ($diferencaHoras < 0 ) {
-			$diferencaHoras = 24 + $diferencaHoras;
-			//echo 'treta';
-		}
-		
+    $diferencaMinutos = $horarioInicial->difference($horarioFinal)->getMinutes() % 60;
+
+    // Verifica se a hora de entrada é maior que a hora de saída (indicando uma troca de dia)
+    if ($diferencaHoras < 0 ) {
+        $diferencaHoras = 24 + $diferencaHoras;
+        $diferencaMinutos = 60 - $diferencaMinutos;
+    }
+
+    $totalHorasNoturnas = 0;
+    $totalHorasDiurnas = 0;
+    $totalMinutosDiurnos = 0;
+    $totalMinutosNoturnos = 0;
+    $inicioNoturno = 22;
+    $fimNoturno =  5;
 
 		
-		//echo $hora;
-		//echo $minutos
-        
-        // Verifica a quantidade de horas noturnas e diurnas
-		//echo $horaEntrada->getHour();
-		
-        for ($i = 0; $i < $diferencaHoras; $i++) {
-			
-            $horaAtual = $horarioInicial->addHours($i);
-			//vai entrar aqui pra substituir a função que está sendo executada aqui
-			//$this->classificaHora($horaAtual);
-			  //echo $horaAtual->getHour();
-            // Verifica se a hora está no período noturno
-				   	   
-				if ($horaAtual->getHour() >= $inicioNoturno || $horaAtual->getHour() <$fimNoturno) {
-						$totalHorasNoturnas++;
-						//echo $horaAtual . ': Noturna ';		
-                
-                    } else {		
-						  
-						$totalHorasDiurnas++;
-                       // echo $horaAtual . ': diurna'; 
-				}
-				
-				 if($horaAtual->getHour() == $horaSaida->getHour()){
-							$totalHorasDiurnas--;
-				// 			//echo "mmm";
-						
-				// 		 // echo $horaAtual . ': Diurna ';
-			 	}
-                
-				
-            }
-            //$totalMinutosDiurnos = 60- $totalMinutosDiurnos;
-            //$totalMinutosNoturnos == 60- $totalMinutosNoturnos;
-            //$totalHorasDiurnas --;
+	
+    for ($i = 0; $i < $diferencaHoras; $i++) {
+        $horaAtual = $horarioInicial->addHours($i);
+
+        if ($horaAtual->getHour() >= $inicioNoturno || $horaAtual->getHour() < $fimNoturno) {
+            $totalHorasNoturnas++;
+            $totalMinutosNoturnos += $horaAtual->format('i');
+            echo '<br' . $totalMinutosNoturnos;
             
-            
-				
-            //echo $horarioInicial;
+        } else {
+            $totalHorasDiurnas++;
+            $totalMinutosDiurnos += $horaAtual->format('i');
+        }
+    }//var_dump($horaAtual);
+        // Ajuste nos minutos noturnos
+       $totalMinutosNoturnos = $totalMinutosNoturnos % 60;
+        // Ajuste nos minutos diurnos
+       $totalMinutosDiurnos = $totalMinutosDiurnos % 60;
+
   
         return [
             'diferencaHoras' => $diferencaHoras,
-            'diferencaMinutos' => $minutos,
+            'diferencaMinutos' => $diferencaMinutos,
             'totalHorasNoturnas' => $totalHorasNoturnas,
 			'totalMinutosNoturnos' => $totalMinutosNoturnos,	
 			'totalHorasDiurnas' => $totalHorasDiurnas,
@@ -193,7 +163,8 @@ class HoraTrabalhada extends Controller
 		//fim da função a ser substituida
     }
 
-  
+
+}
 //     public function classificaHora($horarioInicial, $horarioFinal){
 //         $horaAtual = $horarioInicial->getHour();
 
@@ -214,7 +185,5 @@ class HoraTrabalhada extends Controller
 // }
     
     
-}
+//}
    
- 
-    
