@@ -2,19 +2,19 @@
 <div class="row container white  valign-wrapper z-depth-2">
         
         <div class="col s4">
-            <p>Hora Entrada: <?= $horaEntradaView->toTimeString() ?></p>
-            <p>Hora Saida: <?= $horaSaidaView->toTimeString() ?> </p>
+            <p>Hora Entrada: <?= $resultadoView['horaEntrada']->toTimeString() ?></p>
+            <p>Hora Saida: <?= $resultadoView['horaSaida']->toTimeString() ?> </p>
         </div> 
         <div class="col s4">
-            <p>Horas Diurnas: <?= $resultadoView['totalHorasDiurnas'] ?> horas e <?= $resultadoView['totalMinutosDiurnos'] ?> minutos</p>
-	        <p>Horas Noturnas: <?= $resultadoView['totalHorasNoturnas'] ?> horas e <?= $resultadoView['totalMinutosNoturnos'] ?> minutos</p>
+            <p>Horas Diurnas: <?= $resultadoView['periodoDiurno']->toTimeString() ?>;
+	        <p>Horas Noturnas: <?= $resultadoView['periodoNoturno']->toTimeString() ?>;
         </div>
               
         <div class="col s4 center">
             <?php
             //echo $saved;
          
-             echo form_open('horaTrabalhada/save_registro/'.$horaEntradaView->toTimeString() . '/' . $horaSaidaView->toTimeString()  ); 
+             echo form_open('horaTrabalhada/save_registro/'.$resultadoView['horaEntrada']->toTimeString() . '/' . $resultadoView['horaSaida']->toTimeString()  ); 
                     $data = [
                     'name'      => 'submit',
                     'value'     => 'Registrar!',

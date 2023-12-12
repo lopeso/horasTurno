@@ -1,16 +1,17 @@
 <br>
 <div class="row container white  z-depth-2">
-  
+<!-- <input type="text" class="datepicker"> -->
 <div class="valign-wrapper">
     <div class="col s4">
     <?php
-          echo form_open('horaTrabalhada/pegaHora'); ?>
+          echo form_open('horaTrabalhada/comparaHora'); ?>
           <label for="horaEntrada">Hora entrada</label>
           <?php
           
             $data = [
                 'name'      => 'horaEntrada',
-                'type'      => 'time'
+                'type'      => 'text',
+                'class'     =>"timepicker"
             ];
                 echo form_input($data);
           ?>
@@ -22,7 +23,8 @@
                 
                 $data = [
                     'name'      => 'horaSaida',              
-                    'type'      => 'time'
+                    'type'      => 'text',
+                    'class'     =>"timepicker"
                 ];
                     echo form_input($data);
               ?>
@@ -44,7 +46,13 @@
         </div>
       </div>
     </div>
-    
+<script type="text/javascript">
+ $(document).ready(function(){
+    $('.datepicker').datepicker();
+    $('.timepicker').timepicker();
+  });
+
+</script>
      
      
       

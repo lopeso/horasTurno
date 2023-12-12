@@ -1,0 +1,906 @@
+CRITICAL - 2023-12-12 03:48:47 --> Object of class CodeIgniter\I18n\TimeDifference could not be converted to string
+in APPPATH\Controllers\Horatrabalhada.php on line 170.
+ 1 APPPATH\Controllers\Horatrabalhada.php(222): App\Controllers\HoraTrabalhada->analisaHora(Object(CodeIgniter\I18n\Time), Object(CodeIgniter\I18n\Time))
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->classificaHora()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 03:48:55 --> syntax error, unexpected token ";", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\Horatrabalhada.php on line 170.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/classificaHora', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/classificaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/classificaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 03:52:24 --> Call to undefined method CodeIgniter\I18n\TimeDifference::toTimeString()
+in APPPATH\Controllers\Horatrabalhada.php on line 170.
+ 1 APPPATH\Controllers\Horatrabalhada.php(222): App\Controllers\HoraTrabalhada->analisaHora(Object(CodeIgniter\I18n\Time), Object(CodeIgniter\I18n\Time))
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->classificaHora()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 03:52:39 --> Object of class CodeIgniter\I18n\TimeDifference could not be converted to string
+in APPPATH\Controllers\Horatrabalhada.php on line 170.
+ 1 APPPATH\Controllers\Horatrabalhada.php(222): App\Controllers\HoraTrabalhada->analisaHora(Object(CodeIgniter\I18n\Time), Object(CodeIgniter\I18n\Time))
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->classificaHora()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 03:58:58 --> Undefined variable $periodoNDiurno
+in APPPATH\Controllers\Horatrabalhada.php on line 173.
+ 1 APPPATH\Controllers\Horatrabalhada.php(173): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $periodoNDiurno', 'C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\Horatrabalhada.php', 173)
+ 2 APPPATH\Controllers\Horatrabalhada.php(222): App\Controllers\HoraTrabalhada->analisaHora(Object(CodeIgniter\I18n\Time), Object(CodeIgniter\I18n\Time))
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->classificaHora()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 04:06:50 --> Too few arguments to function CodeIgniter\I18n\Time::addHours(), 0 passed in C:\xampp\htdocs\horasTurno\app\Controllers\Horatrabalhada.php on line 151 and exactly 1 expected
+in SYSTEMPATH\I18n\TimeTrait.php on line 728.
+ 1 APPPATH\Controllers\Horatrabalhada.php(151): CodeIgniter\I18n\Time->addHours()
+ 2 APPPATH\Controllers\Horatrabalhada.php(226): App\Controllers\HoraTrabalhada->analisaHora(Object(CodeIgniter\I18n\Time), Object(CodeIgniter\I18n\Time))
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->classificaHora()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 04:09:58 --> syntax error, unexpected token "!"
+in APPPATH\Controllers\Horatrabalhada.php on line 162.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/classificaHora', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/classificaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/classificaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 04:25:41 --> Undefined variable $diferencaPrimeiraHora
+in APPPATH\Controllers\Horatrabalhada.php on line 155.
+ 1 APPPATH\Controllers\Horatrabalhada.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $diferencaPrimeiraHora', 'C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\Horatrabalhada.php', 155)
+ 2 APPPATH\Controllers\Horatrabalhada.php(226): App\Controllers\HoraTrabalhada->analisaHora(Object(CodeIgniter\I18n\Time), Object(CodeIgniter\I18n\Time))
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->classificaHora()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 04:27:54 --> Undefined variable $diferencaPrimeiraHora
+in APPPATH\Controllers\Horatrabalhada.php on line 155.
+ 1 APPPATH\Controllers\Horatrabalhada.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $diferencaPrimeiraHora', 'C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\Horatrabalhada.php', 155)
+ 2 APPPATH\Controllers\Horatrabalhada.php(226): App\Controllers\HoraTrabalhada->analisaHora(Object(CodeIgniter\I18n\Time), Object(CodeIgniter\I18n\Time))
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->classificaHora()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 04:29:30 --> Undefined variable $diferencaPrimeiraHora
+in APPPATH\Controllers\Horatrabalhada.php on line 155.
+ 1 APPPATH\Controllers\Horatrabalhada.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $diferencaPrimeiraHora', 'C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\Horatrabalhada.php', 155)
+ 2 APPPATH\Controllers\Horatrabalhada.php(226): App\Controllers\HoraTrabalhada->analisaHora(Object(CodeIgniter\I18n\Time), Object(CodeIgniter\I18n\Time))
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->classificaHora()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 05:15:08 --> Call to a member function toTimeString() on int
+in APPPATH\Controllers\Horatrabalhada.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro('19:03:00', '06:59:00')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 05:17:57 --> Object of class CodeIgniter\I18n\TimeDifference could not be converted to string
+in APPPATH\Controllers\Horatrabalhada.php on line 114.
+ 1 APPPATH\Controllers\Horatrabalhada.php(54): App\Controllers\HoraTrabalhada->analisaHora(Object(CodeIgniter\I18n\Time), Object(CodeIgniter\I18n\Time))
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro('19:03:00', '06:59:00')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 05:18:23 --> Call to a member function toTimeString() on int
+in APPPATH\Controllers\Horatrabalhada.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro('19:03:00', '06:59:00')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 05:19:17 --> Call to undefined method CodeIgniter\I18n\TimeDifference::toTimeString()
+in APPPATH\Controllers\Horatrabalhada.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro('19:03:00', '06:59:00')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 05:19:35 --> Object of class CodeIgniter\I18n\TimeDifference could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 333.
+ 1 SYSTEMPATH\Database\Query.php(333): strtr('INSERT INTO `registro_turno` (`horaEntrada`, `HoraSaida`, `TotalTurno`, `HorasDiurnas`, `HorasNoturnas`) VALUES (:horaEntrada:, :HoraSaida:, :TotalTurno:, :HorasDiurnas:, :HorasNoturnas:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(308): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `registro_turno` (`horaEntrada`, `HoraSaida`, `TotalTurno`, `HorasDiurnas`, `HorasNoturnas`) VALUES (:horaEntrada:, :HoraSaida:, :TotalTurno:, :HorasDiurnas:, :HorasNoturnas:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `registro_turno` (`horaEntrada`, `HoraSaida`, `TotalTurno`, `HorasDiurnas`, `HorasNoturnas`) VALUES (:horaEntrada:, :HoraSaida:, :TotalTurno:, :HorasDiurnas:, :HorasNoturnas:)', [...], false)
+ 6 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\Horatrabalhada.php(59): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro('19:03:00', '06:59:00')
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 05:20:47 --> Array to string conversion
+in APPPATH\Controllers\Horatrabalhada.php on line 64.
+ 1 APPPATH\Controllers\Horatrabalhada.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\Horatrabalhada.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro('19:03:00', '06:59:00')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 05:21:11 --> Array to string conversion
+in APPPATH\Controllers\Horatrabalhada.php on line 64.
+ 1 APPPATH\Controllers\Horatrabalhada.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\Horatrabalhada.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro('19:03:00', '06:59:00')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 05:21:24 --> Object of class CodeIgniter\I18n\TimeDifference could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 333.
+ 1 SYSTEMPATH\Database\Query.php(333): strtr('INSERT INTO `registro_turno` (`horaEntrada`, `HoraSaida`, `TotalTurno`, `HorasDiurnas`, `HorasNoturnas`) VALUES (:horaEntrada:, :HoraSaida:, :TotalTurno:, :HorasDiurnas:, :HorasNoturnas:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(308): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `registro_turno` (`horaEntrada`, `HoraSaida`, `TotalTurno`, `HorasDiurnas`, `HorasNoturnas`) VALUES (:horaEntrada:, :HoraSaida:, :TotalTurno:, :HorasDiurnas:, :HorasNoturnas:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `registro_turno` (`horaEntrada`, `HoraSaida`, `TotalTurno`, `HorasDiurnas`, `HorasNoturnas`) VALUES (:horaEntrada:, :HoraSaida:, :TotalTurno:, :HorasDiurnas:, :HorasNoturnas:)', [...], false)
+ 6 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\Horatrabalhada.php(59): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro('19:03:00', '06:59:00')
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 05:22:02 --> Object of class CodeIgniter\I18n\TimeDifference could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 333.
+ 1 SYSTEMPATH\Database\Query.php(333): strtr('INSERT INTO `registro_turno` (`horaEntrada`, `HoraSaida`, `TotalTurno`, `HorasDiurnas`, `HorasNoturnas`) VALUES (:horaEntrada:, :HoraSaida:, :TotalTurno:, :HorasDiurnas:, :HorasNoturnas:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(308): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `registro_turno` (`horaEntrada`, `HoraSaida`, `TotalTurno`, `HorasDiurnas`, `HorasNoturnas`) VALUES (:horaEntrada:, :HoraSaida:, :TotalTurno:, :HorasDiurnas:, :HorasNoturnas:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `registro_turno` (`horaEntrada`, `HoraSaida`, `TotalTurno`, `HorasDiurnas`, `HorasNoturnas`) VALUES (:horaEntrada:, :HoraSaida:, :TotalTurno:, :HorasDiurnas:, :HorasNoturnas:)', [...], false)
+ 6 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\Horatrabalhada.php(59): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro('19:03:00', '06:59:00')
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 11:47:11 --> Cannot access offset of type string on string
+in APPPATH\Views\output_hora.php on line 5.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_hora', [], true)
+ 4 APPPATH\Controllers\Horatrabalhada.php(35): view('output_hora', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 12:00:30 --> syntax error, unexpected token "else"
+in APPPATH\Controllers\Horatrabalhada.php on line 155.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/pegaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/pegaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/pegaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 12:00:56 --> syntax error, unexpected token "else"
+in APPPATH\Controllers\Horatrabalhada.php on line 156.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/pegaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/pegaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/pegaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 12:01:11 --> syntax error, unexpected token "else"
+in APPPATH\Controllers\Horatrabalhada.php on line 156.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/pegaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/pegaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/pegaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 12:01:25 --> Undefined variable $i
+in APPPATH\Controllers\Horatrabalhada.php on line 136.
+ 1 APPPATH\Controllers\Horatrabalhada.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\Horatrabalhada.php', 136)
+ 2 APPPATH\Controllers\Horatrabalhada.php(29): App\Controllers\HoraTrabalhada->analisaHora('19:06', '06:59')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 12:03:43 --> Object of class CodeIgniter\I18n\TimeDifference could not be converted to string
+in APPPATH\Controllers\Horatrabalhada.php on line 120.
+ 1 APPPATH\Controllers\Horatrabalhada.php(29): App\Controllers\HoraTrabalhada->analisaHora('23:59', '08:02')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 12:35:50 --> Too few arguments to function App\Controllers\HoraTrabalhada::comparaHora(), 0 passed in C:\xampp\htdocs\horasTurno\system\CodeIgniter.php on line 942 and exactly 2 expected
+in APPPATH\Controllers\Horatrabalhada.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 12:40:57 --> Undefined variable $horaEntrada
+in APPPATH\Views\output_hora.php on line 5.
+ 1 APPPATH\Views\output_hora.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $horaEntrada', 'C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php', 5)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_hora', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(35): view('output_hora', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 12:43:44 --> Too few arguments to function App\Controllers\HoraTrabalhada::comparaHora(), 0 passed in C:\xampp\htdocs\horasTurno\system\CodeIgniter.php on line 942 and exactly 2 expected
+in APPPATH\Controllers\Horatrabalhada.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 12:44:16 --> syntax error, unexpected identifier "null", expecting ")"
+in APPPATH\Controllers\Horatrabalhada.php on line 33.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/comparaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/comparaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/comparaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 12:45:23 --> Too few arguments to function App\Controllers\HoraTrabalhada::comparaHora(), 0 passed in C:\xampp\htdocs\horasTurno\system\CodeIgniter.php on line 942 and exactly 2 expected
+in APPPATH\Controllers\Horatrabalhada.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 12:46:52 --> Too few arguments to function App\Controllers\HoraTrabalhada::comparaHora(), 0 passed in C:\xampp\htdocs\horasTurno\system\CodeIgniter.php on line 942 and exactly 2 expected
+in APPPATH\Controllers\Horatrabalhada.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 12:47:05 --> syntax error, unexpected variable "$horaEntrada", expecting ")"
+in APPPATH\Controllers\Horatrabalhada.php on line 33.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/comparaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/comparaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/comparaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 12:47:31 --> syntax error, unexpected token ","
+in APPPATH\Controllers\Horatrabalhada.php on line 33.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/comparaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/comparaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/comparaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 12:48:31 --> syntax error, unexpected token ","
+in APPPATH\Controllers\Horatrabalhada.php on line 33.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/comparaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/comparaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/comparaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 12:48:44 --> syntax error, unexpected token "?"
+in APPPATH\Controllers\Horatrabalhada.php on line 33.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/comparaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/comparaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/comparaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 12:49:16 --> Too few arguments to function App\Controllers\HoraTrabalhada::comparaHora(), 0 passed in C:\xampp\htdocs\horasTurno\system\CodeIgniter.php on line 942 and exactly 2 expected
+in APPPATH\Controllers\Horatrabalhada.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 12:49:42 --> Too few arguments to function App\Controllers\HoraTrabalhada::comparaHora(), 0 passed in C:\xampp\htdocs\horasTurno\system\CodeIgniter.php on line 942 and exactly 2 expected
+in APPPATH\Controllers\Horatrabalhada.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 12:57:16 --> Too few arguments to function App\Controllers\HoraTrabalhada::comparaHora(), 0 passed in C:\xampp\htdocs\horasTurno\system\CodeIgniter.php on line 942 and exactly 2 expected
+in APPPATH\Controllers\Horatrabalhada.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 12:57:31 --> Too few arguments to function App\Controllers\HoraTrabalhada::comparaHora(), 0 passed in C:\xampp\htdocs\horasTurno\system\CodeIgniter.php on line 942 and exactly 2 expected
+in APPPATH\Controllers\Horatrabalhada.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 12:58:32 --> Too few arguments to function App\Controllers\HoraTrabalhada::comparaHora(), 0 passed in C:\xampp\htdocs\horasTurno\system\CodeIgniter.php on line 942 and exactly 2 expected
+in APPPATH\Controllers\Horatrabalhada.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 12:59:54 --> Too few arguments to function App\Controllers\HoraTrabalhada::comparaHora(), 0 passed in C:\xampp\htdocs\horasTurno\system\CodeIgniter.php on line 942 and exactly 2 expected
+in APPPATH\Controllers\Horatrabalhada.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 13:04:25 --> Too few arguments to function App\Controllers\HoraTrabalhada::comparaHora(), 0 passed in C:\xampp\htdocs\horasTurno\system\CodeIgniter.php on line 942 and exactly 2 expected
+in APPPATH\Controllers\Horatrabalhada.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 13:08:48 --> syntax error, unexpected token "echo"
+in APPPATH\Controllers\Horatrabalhada.php on line 52.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/comparaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/comparaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/comparaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 13:08:56 --> CodeIgniter\I18n\Time::subMinutes(): Argument #1 ($minutes) must be of type int, CodeIgniter\I18n\Time given, called in C:\xampp\htdocs\horasTurno\app\Controllers\Horatrabalhada.php on line 50
+in SYSTEMPATH\I18n\TimeTrait.php on line 788.
+ 1 APPPATH\Controllers\Horatrabalhada.php(50): CodeIgniter\I18n\Time->subMinutes(Object(CodeIgniter\I18n\Time))
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 13:09:31 --> CodeIgniter\I18n\Time::subMinutes(): Argument #1 ($minutes) must be of type int, CodeIgniter\I18n\Time given, called in C:\xampp\htdocs\horasTurno\app\Controllers\Horatrabalhada.php on line 50
+in SYSTEMPATH\I18n\TimeTrait.php on line 788.
+ 1 APPPATH\Controllers\Horatrabalhada.php(50): CodeIgniter\I18n\Time->subMinutes(Object(CodeIgniter\I18n\Time))
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 13:11:33 --> CodeIgniter\I18n\Time::subMinutes(): Argument #1 ($minutes) must be of type int, CodeIgniter\I18n\Time given, called in C:\xampp\htdocs\horasTurno\app\Controllers\Horatrabalhada.php on line 50
+in SYSTEMPATH\I18n\TimeTrait.php on line 788.
+ 1 APPPATH\Controllers\Horatrabalhada.php(50): CodeIgniter\I18n\Time->subMinutes(Object(CodeIgniter\I18n\Time))
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 13:12:22 --> CodeIgniter\I18n\Time::subMinutes(): Argument #1 ($minutes) must be of type int, CodeIgniter\I18n\Time given, called in C:\xampp\htdocs\horasTurno\app\Controllers\Horatrabalhada.php on line 50
+in SYSTEMPATH\I18n\TimeTrait.php on line 788.
+ 1 APPPATH\Controllers\Horatrabalhada.php(50): CodeIgniter\I18n\Time->subMinutes(Object(CodeIgniter\I18n\Time))
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 13:12:33 --> Undefined variable $resultadoView
+in APPPATH\Views\output_hora.php on line 6.
+ 1 APPPATH\Views\output_hora.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultadoView', 'C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_hora', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(36): view('output_hora', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 13:13:57 --> Undefined variable $resultadoView
+in APPPATH\Views\output_hora.php on line 6.
+ 1 APPPATH\Views\output_hora.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultadoView', 'C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_hora', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(36): view('output_hora', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 13:14:03 --> syntax error, unexpected token "echo", expecting "," or ";"
+in APPPATH\Controllers\Horatrabalhada.php on line 53.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/pegaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/pegaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/pegaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 13:14:12 --> Undefined variable $comparaHora
+in APPPATH\Controllers\Horatrabalhada.php on line 39.
+ 1 APPPATH\Controllers\Horatrabalhada.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comparaHora', 'C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\Horatrabalhada.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 13:31:22 --> Undefined variable $comparaHora
+in APPPATH\Controllers\Horatrabalhada.php on line 39.
+ 1 APPPATH\Controllers\Horatrabalhada.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comparaHora', 'C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\Horatrabalhada.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 13:31:50 --> Undefined variable $resultadoView
+in APPPATH\Views\output_hora.php on line 6.
+ 1 APPPATH\Views\output_hora.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultadoView', 'C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_hora', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(36): view('output_hora', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 13:32:31 --> Undefined variable $horaEntrada
+in APPPATH\Views\output_hora.php on line 5.
+ 1 APPPATH\Views\output_hora.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $horaEntrada', 'C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php', 5)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_hora', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(36): view('output_hora', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 13:33:09 --> Undefined variable $horaEntrada
+in APPPATH\Views\output_hora.php on line 5.
+ 1 APPPATH\Views\output_hora.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $horaEntrada', 'C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php', 5)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_hora.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_hora', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(37): view('output_hora', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->pegaHora()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 13:35:23 --> Call to undefined method DateInterval::h()
+in APPPATH\Controllers\Horatrabalhada.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 13:38:30 --> syntax error, unexpected token "."
+in APPPATH\Controllers\Horatrabalhada.php on line 52.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/comparaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/comparaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/comparaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 14:12:44 --> syntax error, unexpected variable "$horaInicial"
+in APPPATH\Controllers\Horatrabalhada.php on line 56.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/comparaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/comparaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/comparaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 14:50:16 --> syntax error, unexpected variable "$horaInicial"
+in APPPATH\Controllers\Horatrabalhada.php on line 59.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/comparaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/comparaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/comparaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 14:50:39 --> syntax error, unexpected token "echo", expecting "," or ";"
+in APPPATH\Controllers\Horatrabalhada.php on line 75.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/comparaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/comparaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/comparaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 14:50:52 --> Call to undefined method CodeIgniter\I18n\Time::setMinutes()
+in APPPATH\Controllers\Horatrabalhada.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 14:52:02 --> syntax error, unexpected token "<"
+in APPPATH\Controllers\Horatrabalhada.php on line 72.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/comparaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/comparaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/comparaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:01:09 --> syntax error, unexpected token "<"
+in APPPATH\Controllers\Horatrabalhada.php on line 76.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/comparaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/comparaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/comparaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:01:21 --> syntax error, unexpected token "<"
+in APPPATH\Controllers\Horatrabalhada.php on line 76.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/comparaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/comparaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/comparaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:01:35 --> syntax error, unexpected token "echo", expecting "function" or "const"
+in APPPATH\Controllers\Horatrabalhada.php on line 85.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/comparaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/comparaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/comparaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:02:54 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\Horatrabalhada.php on line 89.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/comparaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/comparaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/comparaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:03:06 --> Call to undefined method CodeIgniter\I18n\Time::getHours()
+in APPPATH\Controllers\Horatrabalhada.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:09:34 --> Unclosed '{' on line 45 does not match ')'
+in APPPATH\Controllers\Horatrabalhada.php on line 83.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/comparaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/comparaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/comparaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:09:45 --> CodeIgniter\I18n\Time::addMinutes(): Argument #1 ($minutes) must be of type int, null given, called in C:\xampp\htdocs\horasTurno\app\Controllers\Horatrabalhada.php on line 86
+in SYSTEMPATH\I18n\TimeTrait.php on line 716.
+ 1 APPPATH\Controllers\Horatrabalhada.php(86): CodeIgniter\I18n\Time->addMinutes(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:14:22 --> Maximum execution time of 120 seconds exceeded
+in APPPATH\Controllers\Horatrabalhada.php on line 73.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-12 15:14:35 --> syntax error, unexpected token ";"
+in APPPATH\Controllers\Horatrabalhada.php on line 61.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\HoraTrabalhada.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\HoraTrabalhada')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\HoraTrabalhada')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\HoraTrabalhada', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:14:37 --> syntax error, unexpected token ";"
+in APPPATH\Controllers\Horatrabalhada.php on line 61.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\HoraTrabalhada.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\HoraTrabalhada')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\HoraTrabalhada')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\HoraTrabalhada', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:15:04 --> syntax error, unexpected token ";"
+in APPPATH\Controllers\Horatrabalhada.php on line 61.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\HoraTrabalhada.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\HoraTrabalhada')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\HoraTrabalhada')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\HoraTrabalhada', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:16:06 --> syntax error, unexpected token "if"
+in APPPATH\Controllers\Horatrabalhada.php on line 65.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\HoraTrabalhada.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\HoraTrabalhada')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\HoraTrabalhada')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\HoraTrabalhada', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:18:30 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\I18n\TimeTrait.php on line 910.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-12 15:24:17 --> Undefined property: DateInterval::$hours
+in APPPATH\Controllers\Horatrabalhada.php on line 76.
+ 1 APPPATH\Controllers\Horatrabalhada.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: DateInterval::$hours', 'C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\Horatrabalhada.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:24:34 --> Call to undefined method DateInterval::getHours()
+in APPPATH\Controllers\Horatrabalhada.php on line 76.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:24:41 --> Call to undefined method DateInterval::getHour()
+in APPPATH\Controllers\Horatrabalhada.php on line 76.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:25:14 --> Call to undefined method CodeIgniter\I18n\TimeDifference::format()
+in APPPATH\Controllers\Horatrabalhada.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:25:19 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\I18n\TimeTrait.php on line 732.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-12 15:25:22 --> Call to undefined method DateInterval::getHours()
+in APPPATH\Controllers\Horatrabalhada.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:27:32 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\I18n\TimeTrait.php on line 910.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-12 15:32:54 --> Undefined variable $horaAtual
+in APPPATH\Controllers\Horatrabalhada.php on line 61.
+ 1 APPPATH\Controllers\Horatrabalhada.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $horaAtual', 'C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\Horatrabalhada.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:37:30 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\I18n\TimeTrait.php on line 910.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-12 15:39:15 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\I18n\TimeTrait.php on line 732.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-12 15:40:36 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\I18n\TimeTrait.php on line 910.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-12 15:42:47 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\I18n\TimeTrait.php on line 910.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-12 15:43:22 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\I18n\TimeTrait.php on line 910.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-12 15:46:50 --> syntax error, unexpected token ")", expecting ";"
+in APPPATH\Controllers\Horatrabalhada.php on line 81.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/comparaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/comparaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/comparaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:50:44 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Controllers\Horatrabalhada.php on line 65.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/comparaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/comparaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/comparaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:52:50 --> Call to undefined method CodeIgniter\I18n\Time::addHour()
+in APPPATH\Controllers\Horatrabalhada.php on line 80.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:55:03 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\I18n\TimeTrait.php on line 910.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-12 15:55:40 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\I18n\TimeTrait.php on line 910.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-12 16:00:04 --> Too few arguments to function App\Controllers\HoraTrabalhada::analisaHora(), 0 passed in C:\xampp\htdocs\horasTurno\system\CodeIgniter.php on line 942 and exactly 2 expected
+in APPPATH\Controllers\Horatrabalhada.php on line 155.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->analisaHora()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 16:03:28 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\I18n\TimeTrait.php on line 910.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-12 16:07:02 --> syntax error, unexpected token ")", expecting ";"
+in APPPATH\Controllers\Horatrabalhada.php on line 80.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/comparaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/comparaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/comparaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 16:08:44 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\I18n\TimeTrait.php on line 910.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-12 16:12:13 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\I18n\TimeTrait.php on line 910.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-12 16:19:14 --> Trying to access array offset on value of type null
+in APPPATH\Views\turnos_test.php on line 4.
+ 1 APPPATH\Views\turnos_test.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\horasTurno\\app\\Views\\turnos_test.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\turnos_test.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('turnos_test', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(296): view('turnos_test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->classificaHora()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 16:45:46 --> syntax error, unexpected token "else"
+in APPPATH\Controllers\Horatrabalhada.php on line 71.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/comparaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/comparaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/comparaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 16:52:29 --> Can't use method return value in write context
+in APPPATH\Controllers\Horatrabalhada.php on line 98.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-12 17:10:32 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\Horatrabalhada.php on line 106.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/comparaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/comparaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/comparaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 17:10:53 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\Horatrabalhada.php on line 106.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada/comparaHora', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada/comparaHora')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada/comparaHora')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 17:11:02 --> Undefined property: DateInterval::$2023-12-12 00:00:00
+in APPPATH\Controllers\Horatrabalhada.php on line 100.
+ 1 APPPATH\Controllers\Horatrabalhada.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: DateInterval::$2023-12-12 00:00:00', 'C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\Horatrabalhada.php', 100)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 17:11:40 --> Undefined property: DateInterval::$2023-12-12 03:02:00
+in APPPATH\Controllers\Horatrabalhada.php on line 100.
+ 1 APPPATH\Controllers\Horatrabalhada.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: DateInterval::$2023-12-12 03:02:00', 'C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\Horatrabalhada.php', 100)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 17:31:41 --> Undefined variable $turno1
+in APPPATH\Views\turnos_test.php on line 4.
+ 1 APPPATH\Views\turnos_test.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $turno1', 'C:\\xampp\\htdocs\\horasTurno\\app\\Views\\turnos_test.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\turnos_test.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('turnos_test', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(113): view('turnos_test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 17:37:10 --> Undefined variable $turno1
+in APPPATH\Views\turnos_test.php on line 4.
+ 1 APPPATH\Views\turnos_test.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $turno1', 'C:\\xampp\\htdocs\\horasTurno\\app\\Views\\turnos_test.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\turnos_test.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('turnos_test', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(113): view('turnos_test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 17:41:05 --> Undefined variable $horaEntrada
+in APPPATH\Views\output_comparaHora.php on line 6.
+ 1 APPPATH\Views\output_comparaHora.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $horaEntrada', 'C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_comparaHora.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_comparaHora.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_comparaHora', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(113): view('output_comparaHora', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 17:52:02 --> Call to undefined method CodeIgniter\I18n\Time::getHours()
+in APPPATH\Views\output_comparaHora.php on line 17.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_comparaHora', [], true)
+ 4 APPPATH\Controllers\Horatrabalhada.php(113): view('output_comparaHora', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 17:55:52 --> Undefined variable $turno
+in APPPATH\Views\output_comparaHora.php on line 25.
+ 1 APPPATH\Views\output_comparaHora.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $turno', 'C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_comparaHora.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_comparaHora.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_comparaHora', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(113): view('output_comparaHora', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 17:56:16 --> Undefined variable $turno
+in APPPATH\Views\output_comparaHora.php on line 25.
+ 1 APPPATH\Views\output_comparaHora.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $turno', 'C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_comparaHora.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_comparaHora.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_comparaHora', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(113): view('output_comparaHora', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 17:56:18 --> Undefined variable $turno
+in APPPATH\Views\output_comparaHora.php on line 25.
+ 1 APPPATH\Views\output_comparaHora.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $turno', 'C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_comparaHora.php', 25)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_comparaHora.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_comparaHora', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(113): view('output_comparaHora', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 17:56:59 --> Call to undefined method DateInterval::toTimeString()
+in APPPATH\Views\output_comparaHora.php on line 25.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_comparaHora', [], true)
+ 4 APPPATH\Controllers\Horatrabalhada.php(113): view('output_comparaHora', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 18:06:18 --> Undefined variable $resultadoView
+in APPPATH\Views\output_comparaHora.php on line 3.
+ 1 APPPATH\Views\output_comparaHora.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultadoView', 'C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_comparaHora.php', 3)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_comparaHora.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_comparaHora', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(113): view('output_comparaHora', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 18:07:14 --> Unmatched ')'
+in APPPATH\Views\output_comparaHora.php on line 3.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_comparaHora', [], true)
+ 3 APPPATH\Controllers\Horatrabalhada.php(113): view('output_comparaHora', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 18:17:50 --> Undefined variable $atributos
+in APPPATH\Views\output_comparaHora.php on line 7.
+ 1 APPPATH\Views\output_comparaHora.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $atributos', 'C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_comparaHora.php', 7)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\output_comparaHora.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_comparaHora', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(113): view('output_comparaHora', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->comparaHora()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 18:20:06 --> Too few arguments to function App\Controllers\HoraTrabalhada::save_registro(), 0 passed in C:\xampp\htdocs\horasTurno\system\CodeIgniter.php on line 942 and exactly 2 expected
+in APPPATH\Controllers\Horatrabalhada.php on line 118.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 18:21:32 --> Too few arguments to function App\Controllers\HoraTrabalhada::save_registro(), 0 passed in C:\xampp\htdocs\horasTurno\system\CodeIgniter.php on line 942 and exactly 2 expected
+in APPPATH\Controllers\Horatrabalhada.php on line 118.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 18:40:23 --> Undefined variable $periodoTurno
+in APPPATH\Controllers\Horatrabalhada.php on line 142.
+ 1 APPPATH\Controllers\Horatrabalhada.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $periodoTurno', 'C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\Horatrabalhada.php', 142)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 18:46:17 --> Call to a member function toTimeString() on null
+in APPPATH\Controllers\Horatrabalhada.php on line 138.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 18:46:54 --> Call to a member function toTimeString() on null
+in APPPATH\Controllers\Horatrabalhada.php on line 138.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 18:47:10 --> Call to a member function toTimeString() on null
+in APPPATH\Controllers\Horatrabalhada.php on line 138.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

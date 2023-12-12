@@ -6,6 +6,11 @@ use CodeIgniter\Model;
 
 class Turno extends Model
 {
+    public $horaeEntrada;
+    public $horaSaida;
+    public $periodoDiurno;
+    public $periodoNoturno;
+
     protected $table = 'registro_turno';
     protected $allowedFields = ['id', 'horaEntrada', 'HoraSaida', 'HorasDiurnas', 'HorasNoturnas', 'TotalTurno'];
 
