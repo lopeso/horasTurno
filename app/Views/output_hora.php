@@ -2,7 +2,7 @@
 <div class="row container white  valign-wrapper z-depth-2">
         
         <div class="col s4">
-            <p>Hora Entrada: <?= $resultadoView['horaEntrada']->toTimeString() ?></p>
+            <p> ssssHora Entrada: <?= $resultadoView['horaEntrada']->toTimeString() ?></p>
             <p>Hora Saida: <?= $resultadoView['horaSaida']->toTimeString() ?> </p>
         </div> 
         <div class="col s4">

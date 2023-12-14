@@ -1,5 +1,6 @@
 <br>
-<div class="row container white  z-depth-2">
+<div class="row container  white  z-depth-2">
+  <br>
 <!-- <input type="text" class="datepicker"> -->
 <div class="valign-wrapper">
     <div class="col s4">
@@ -11,7 +12,7 @@
             $data = [
                 'name'      => 'horaEntrada',
                 'type'      => 'text',
-                'class'     =>"timepicker"
+                'class'     =>"timepicker input-field inline valign"
             ];
                 echo form_input($data);
           ?>
@@ -24,12 +25,12 @@
                 $data = [
                     'name'      => 'horaSaida',              
                     'type'      => 'text',
-                    'class'     =>"timepicker"
+                    'class'     =>"timepicker input-field inline valign"
                 ];
                     echo form_input($data);
               ?>
           </div>
-          <div class="col s4 center ">
+          <div class="col s4 center valign">
         
           <?php 
       
@@ -37,14 +38,16 @@
           $data = [
             'name'      => 'submit',
             'value'     => 'Enviar!',
-            'class'      => 'btn'
+            'class'      => 'btn input-field inline',
+            'style' => 'padding-bottom: 23px'
         ];
-          echo "<br> <br>" . form_submit($data);
+          echo  form_submit($data);
 
 
           echo form_close(); ?>
+         
         </div>
-      </div>
+      </div><br>
     </div>
 <script type="text/javascript">
  $(document).ready(function(){

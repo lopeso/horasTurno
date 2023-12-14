@@ -34,7 +34,7 @@ class HoraTrabalhada extends Controller
            $data =['resultadoView'=> $resultado] ;
             echo view('navBar');      
             //echo(View('input_hora'));
-           echo view('output_hora', $data);
+           return view('output_hora', $data);
             //echo (view('page_analise', $data));    
 		
          //return $comparaHora($horaEntrada, $horaSaida);           		
@@ -92,7 +92,7 @@ class HoraTrabalhada extends Controller
         if($horaAtual->getHour() > 22 || $horaAtual->getHour() <5){
             $periodoNoturno = $periodoNoturno->addMinutes($horaFinal->getMinute());
             $periodoNoturno = $periodoNoturno->subHours(1);
-            echo "          " . $horaAtual->toTimeString();
+           // echo "          " . $horaAtual->toTimeString();
         }else{
             $periodoDiurno = $periodoDiurno->addMinutes($horaFinal->getMinute());
             $periodoDiurno = $periodoDiurno->subHours(1);
@@ -102,46 +102,52 @@ class HoraTrabalhada extends Controller
       //  echo '<br>' . $periodoDiurno->toTimeString();
        // echo '<br>' . $periodoNoturno->toTimeString();
         
+     
+
+        //monta o objeto turno
+        $expediente = new Turno();
+        $expediente->horaEntrada = $horaInicial->getTimestamp();
+        $expediente->horaSaida = $horaFinal->getTimestamp();
+        $expediente->periodoDiurno = $periodoDiurno->getTimestamp();
+        $expediente->periodoNoturno = $periodoNoturno->getTimestamp();
+        
         $data = [
             'horarioEntrada' =>$horaInicial,
             'horarioSaida'  => $horaFinal,
             'periodoDiurno' => $periodoDiurno,
             'periodoNoturno'=> $periodoNoturno,
-            'periodoTurno'  => $turno
+            'periodoTurno'  => $turno,
+            'turno'         => $expediente
         ];
+     
+       // var_dump($dia);
         echo view ('navBar');
+        
         return view('output_comparaHora', $data);
 
         
 }
-    
+
     public function save_registro(){
+    //parse_str($_SERVER['QUERY_STRING'], $_GET); 
+        var_dump($_POST);    
+    $treta = $this->request->getVar('horasNoite');
+    $treta = $this->request->getVar('horarioEntrada');    
+    var_dump($treta);
+        $horaEntrada = $this->request->getVar('horaEntrada');
+        $horaSaida = $this->request->getVar('horarioSaida');
+        //echo $data['horarioEntrada'];
         if($this->request->getMethod() == "get"){
-            $horarioEntrada  = $this->request->getVar('horarioEntrada');
-            $horarioSaida  = $this->request->getVar('horarioSaida');
-            $periodoDiurno =  $this->request->getVar('periodoDiurno');
-            $periodoNoturno = new Time($this->request->getVar('periodoNoturno'));
-            $periodoTurno = new Time($this->request->getVar('periodoTurno'));
            
+           $model = model(Turno::class);
             
-           // $novo = $this->analisaHora($entrada, $saida);
-            $model = model(Turno::class);
-            // $diferencaHoras = $horaSaida->diff($horaEntrada);
-            // $diferencaHoras = $diferencaHoras->h . ":" . $diferencaHoras->i .":". $diferencaHoras->s;
-            
-            // //$diferencaMinutos = $horaSaida->diff($horaEntrada);
-            // $analisaHoras = $this->analisaHora($horaEntrada, $horaSaida);
-            
-            
-            //var_dump($horasDiurnas);
-            $treta= $model->save([
-                'horaEntrada'  => $horarioEntrada->toTimeString(),
-                'HoraSaida'  => $horarioSaida->toTimeString(),
-                'HorasDiurnas' =>  $periodoDiurno->toTimeString(),
-                'HorasNoturnas' => $periodoNoturno->toTimestring(),
-                'TotalTurno' => $periodoTurno->toTimeString()
-                //'HorasNoturnas' =>  $horaEntrada->subHours
-                ]);
+        //     $treta= $model->save([
+        //         'horaEntrada'  => $horarioEntrada->toTimeString(),
+        //         'HoraSaida'  => $horarioSaida->toTimeString(),
+        //         'HorasDiurnas' =>  $periodoDiurno->toTimeString(),
+        //         'HorasNoturnas' => $periodoNoturno->toTimestring(),
+        //         'TotalTurno' => $periodoTurno->toTimeString()
+        //         ]);
              if($treta){
            
                     $data['registros'] = $this->read_registros();
@@ -158,16 +164,16 @@ class HoraTrabalhada extends Controller
         }
         else
              {
-                return "erro";
+                return "erro de inserção no banco";
              }   
         
-        }else return 'erro de requisição post';
-    }
-
+         }else return 'erro no método';
+    
+        }
     public function read_registros(){
         $model = model(Turno::Class); //cria o objeto time para possibilitar operações na view
-        $data['registro'] = $model->getTurno();
-            return view('registro_output', $data);
+        $data['registro'] = $model->loadAllTurnos();
+            return view('registro_output', $data) . view('input_hora');
         }
     
     

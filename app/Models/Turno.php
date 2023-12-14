@@ -6,15 +6,30 @@ use CodeIgniter\Model;
 
 class Turno extends Model
 {
-    public $horaeEntrada;
-    public $horaSaida;
-    public $periodoDiurno;
-    public $periodoNoturno;
+    var $horaEntrada;
+    var $horaSaida;
+    var $periodoDiurno;
+    var $periodoNoturno;
 
     protected $table = 'registro_turno';
-    protected $allowedFields = ['id', 'horaEntrada', 'HoraSaida', 'HorasDiurnas', 'HorasNoturnas', 'TotalTurno'];
+    protected $allowedFields = ['id',
+                                'horaEntrada',
+                                'HoraSaida',
+                                'HorasDiurnas',
+                                'HorasNoturnas', 
+                                'TotalTurno'];
+public function save_turno(){
+    $this->save([
+                'horaEntrada'  => $horarioEntrada->toTimeString(),
+                'HoraSaida'  => $horarioSaida->toTimeString(),
+                'HorasDiurnas' =>  $periodoDiurno->toTimeString(),
+                'HorasNoturnas' => $periodoNoturno->toTimestring(),
+                'TotalTurno' => $periodoTurno->toTimeString()
+                ]);
 
-public function getTurno($id = false)
+}
+
+public function loadAllTurnos($id = false)
     {
         if ($id === false) {
             return $this->findAll();
@@ -23,7 +38,5 @@ public function getTurno($id = false)
         return $this->where(['id' => $id])->first();
     }
 
-    public function setTurno(){
-        
-    }
+    
 }

@@ -20,8 +20,14 @@
         
   <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo left">horaTrabalhada</a>
+      <a href="#" class="brand-logo right col s8">horaTrabalhada</a>
      
+    
+      <!-- <div class="col s4">
+        <a href="#!" class="breadcrumb">input</a>
+        <a href="#!" class="breadcrumb">process</a>
+        <a href="#!" class="breadcrumb white-text">out</a>
+ -->
     </div>
   </nav>
   
