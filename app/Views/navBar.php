@@ -32,9 +32,10 @@
 <ul id="slide-out" class="sidenav">
     <br>
       
-      <li><a class="waves-effect waves-light btn blue-grey lighten-3 " href="<?= site_url()?>"  ><i class="material-icons black-text">blur_on</i>Registrar</a></li>
+      <li><a class="waves-effect waves-light btn blue-grey lighten-3 " href="<?= site_url()?>"  ><i class="material-icons black-text">blur_on</i>Registrar Ponto</a></li>
       <!-- <li><a class="waves-effect waves-light btn blue-grey lighten-3 " href="<?php site_url() . '/horaTrabalhada/validacao'; ?>" ><i class="material-icons black-text">blur_circular</i>Validadores</a></li>     -->
-      <li><a class="waves-effect waves-light btn blue-grey lighten-3 modal-trigger" href="#modal1<?php //php site_url().'/horaTrabalhada/read_registros' ?>" ><i class="material-icons black-text">blur_linear</i>Ler Registros</a></li>
+      <li><a class="waves-effect waves-light btn blue-grey lighten-3 modal-trigger" href="#modal1<?php //php site_url().'/horaTrabalhada/read_registros' ?>" ><i class="material-icons black-text">blur_linear</i>Histórico</a></li>
+
       
       <li><div class="user-view">
       <div class="background blue-grey lighten-5">
@@ -42,12 +43,22 @@
         
          
       </div>
-        <a href="#user"><img class="circle responsive-img" src="https://img.freepik.com/premium-photo/3d-head-woman-human-artificial-intelligence-ai-generated-profile-future-tech-machine-learning-engineering-abstract-face-futuristic-digital-transformation-person-blue-background_590464-162316.jpg"></a>
-       
+          horaTrabalhada.exe
+        <!-- <a href="#user"><img class="circle responsive-img" src="https://img.freepik.com/premium-photo/3d-head-woman-human-artificial-intelligence-ai-generated-profile-future-tech-machine-learning-engineering-abstract-face-futuristic-digital-transformation-person-blue-background_590464-162316.jpg"></a>
+        -->
       </div>
     </li>
       <li><div class="divider"></div></li> 
       <li><a class="subheader">Sobre</a></li>
+      <li>
+      <div class="collapsible-header waves-effect waves-light btn blue-grey lighten-3"><i class="material-icons black-text">blur_linear</i>versões
+      </div>
+      <li>
+      <div class="collapsible-body">
+            <span>Lorem ipsum dolor sit amet.</span>
+          </div>
+          
+      </li>
       <li><a class="waves-effect modal-trigger"  href="#modal2">READ.ME</a></li>
 
 
@@ -59,7 +70,7 @@
       
   <div id="modal2" class="modal modal-fixed-footer" >
     <div class="modal-content">
-    <p class="center">README - **ainda melhorando</p>
+    <p class="center">README - ***melhorando</p>
     <?php 
         echo readfile("../README.md");
     ?>
@@ -80,9 +91,9 @@
   <!-- Modal Structure -->
   <div id="modal1" class="modal modal-fixed-footer" >
     <div class="modal-content">
-    <p class="center">Ainda trabalhando nesta funcionalidade.</p>
+    <p class="center">Trabalhando nesta funcionalidade.</p>
     <p class="center">Ajude-me a melhorar este código pelo github, ou crie apartir dele!</p>
-
+    
       <div class="row ">
         <div class="col s8 ">
           <img class="responsive-img "src=""/>
@@ -102,6 +113,7 @@
 $(document).ready(function(){
     $('.sidenav').sidenav();
     $('.modal').modal();
+    $('.collapsible').collapsible();
   });
       
     </script>

@@ -44,6 +44,21 @@ class HoraTrabalhada extends Controller
 
     }
 
+
+    public function montaTurnoCall(){
+        $turno = model(MTurno::Class);
+        $turno->montaTurno();
+        $data = [ 'horarioEntrada' =>$turno->horaEntrada,
+                 'horarioSaida' =>$turno->horaSaida,
+                 'periodoTurno' => $turno->turno,
+                 'periodoDiurno' =>$turno->periodoDiurno,
+                 'periodoNoturno' =>$turno->periodoNoturno
+                 ];
+            //    ($turno);
+        return view('navBar') . view('output_comparaHora', $data);
+      //  var_dump($turno->turno->h);
+    } 
+
     public function comparaHora(){
         $horaInicial = new Time($this->request->getVar('horaEntrada'));
         $horaFinal = new Time($this->request->getVar('horaSaida')); 
@@ -124,19 +139,8 @@ class HoraTrabalhada extends Controller
         return view('output_comparaHora', $data);
 
     }   
-public function montaTurnoCall(){
-    $turno = model(MTurno::Class);
-    $turno->montaTurno();
-    $data = [ 'horarioEntrada' =>$turno->horaEntrada,
-             'horarioSaida' =>$turno->horaSaida,
-             'periodoTurno' => $turno->turno,
-             'periodoDiurno' =>$turno->periodoDiurno,
-             'periodoNoturno' =>$turno->periodoNoturno
-             ];
-        //    ($turno);
-    return view('navBar') . view('output_comparaHora', $data);
-  //  var_dump($turno->turno->h);
-} 
+
+ 
 
     public function save_registro(){
     //parse_str($_SERVER['QUERY_STRING'], $_GET); 
@@ -148,38 +152,17 @@ public function montaTurnoCall(){
         $horaSaida = $this->request->getVar('horarioSaida');
         //echo $data['horarioEntrada'];
         if($this->request->getMethod() == "get"){
-           
+           echo $treta;
            $model = model(MTurno::class);
-            
-        //     $treta= $model->save([
-        //         'horaEntrada'  => $horarioEntrada->toTimeString(),
-        //         'HoraSaida'  => $horarioSaida->toTimeString(),
-        //         'HorasDiurnas' =>  $periodoDiurno->toTimeString(),
-        //         'HorasNoturnas' => $periodoNoturno->toTimestring(),
-        //         'TotalTurno' => $periodoTurno->toTimeString()
-        //         ]);
-             if($treta){
-           
-                    $data['registros'] = $this->read_registros();
-
-         //       return "salvo com sucesso";
-            return 	view('navBar') .
-                    view('input_success').
-					//View('input_hora')  .
-                    View('input_hora') .
-					//view('output_hora', $data) ;
-                    //view('output_hora', $data) .
-                    view('registro_output', $data);
-                             		
+           //$model::save_turno();
+                            		
         }
         else
              {
                 return "erro de inserção no banco";
              }   
         
-         }else return 'erro no método';
-    
-        }
+         }
     public function read_registros(){
         $model = model(MTurno::Class); //cria o objeto time para possibilitar operações na view
         $data['registro'] = $model->loadAllTurnos();
@@ -330,7 +313,7 @@ public function montaTurnoCall(){
                 'turno2'=> $turno2,
                 'turno3'=> $turno3];
 
-        return view('turnos_test', $data);
+        return view('navBar') . view('turnos_test', $data);
 
         
      }

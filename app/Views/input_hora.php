@@ -1,8 +1,9 @@
 <br>
+<div style="height 100%">
 <div class="row container  white  z-depth-2">
   <br>
 <!-- <input type="text" class="datepicker"> -->
-<div class="valign-wrapper">
+<div class="valign-wrapper" >
     <div class="col s4">
     <?php
           echo form_open('horaTrabalhada/montaTurnoCall'); ?>
@@ -49,6 +50,7 @@
         </div>
       </div><br>
     </div>
+      </div>
 <script type="text/javascript">
  $(document).ready(function(){
     $('.datepicker').datepicker();

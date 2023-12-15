@@ -76,3 +76,137 @@ in APPPATH\Views\output_comparaHora.php on line 51.
  6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
  7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 03:41:12 --> Division by zero
+in APPPATH\Views\output_comparaHora.php on line 51.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_comparaHora', [], true)
+ 4 APPPATH\Controllers\Horatrabalhada.php(137): view('output_comparaHora', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->montaTurnoCall()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 03:58:27 --> syntax error, unexpected token "<", expecting end of file
+in APPPATH\Views\input_hora.php on line 35.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('input_hora', [], true)
+ 3 APPPATH\Controllers\Horatrabalhada.php(20): view('input_hora')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 04:13:05 --> Undefined variable $horarioEntrada
+in APPPATH\Controllers\Horatrabalhada.php on line 159.
+ 1 APPPATH\Controllers\Horatrabalhada.php(159): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $horarioEntrada', 'C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\Horatrabalhada.php', 159)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 04:14:00 --> Undefined variable $horarioEntrada
+in APPPATH\Controllers\Horatrabalhada.php on line 159.
+ 1 APPPATH\Controllers\Horatrabalhada.php(159): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $horarioEntrada', 'C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\Horatrabalhada.php', 159)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 04:15:25 --> Undefined variable $horarioEntrada
+in APPPATH\Controllers\Horatrabalhada.php on line 159.
+ 1 APPPATH\Controllers\Horatrabalhada.php(159): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $horarioEntrada', 'C:\\xampp\\htdocs\\horasTurno\\app\\Controllers\\Horatrabalhada.php', 159)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 04:17:09 --> syntax error, unexpected token "else", expecting "function" or "const"
+in APPPATH\Controllers\Horatrabalhada.php on line 165.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 04:17:12 --> syntax error, unexpected token "else", expecting "function" or "const"
+in APPPATH\Controllers\Horatrabalhada.php on line 165.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 04:17:19 --> syntax error, unexpected token "else", expecting "function" or "const"
+in APPPATH\Controllers\Horatrabalhada.php on line 165.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('horaTrabalhada', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('horaTrabalhada')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('horaTrabalhada')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 04:18:17 --> Typed property App\Models\MTurno::$horaEntrada must not be accessed before initialization
+in APPPATH\Models\MTurno.php on line 124.
+ 1 APPPATH\Controllers\Horatrabalhada.php(157): App\Models\MTurno->save_turno()
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 04:19:32 --> Call to undefined method App\Models\MTurno::save_turno
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Horatrabalhada.php(157): CodeIgniter\Model->__call('save_turno', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 04:19:58 --> Call to protected method App\Models\MTurno::save_turno() from scope App\Controllers\HoraTrabalhada
+in APPPATH\Controllers\Horatrabalhada.php on line 157.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 04:20:17 --> Call to protected method App\Models\MTurno::save_turno() from scope App\Controllers\HoraTrabalhada
+in APPPATH\Controllers\Horatrabalhada.php on line 157.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 04:20:27 --> Undefined constant App\Models\MTurno::save_turno
+in APPPATH\Controllers\Horatrabalhada.php on line 157.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 04:20:49 --> Call to protected method App\Models\MTurno::save_turno() from scope App\Controllers\HoraTrabalhada
+in APPPATH\Controllers\Horatrabalhada.php on line 157.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 04:21:14 --> Call to protected method App\Models\MTurno::save_turno() from scope App\Controllers\HoraTrabalhada
+in APPPATH\Controllers\Horatrabalhada.php on line 157.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 04:21:51 --> Call to protected method App\Models\MTurno::save_turno() from scope App\Controllers\HoraTrabalhada
+in APPPATH\Controllers\Horatrabalhada.php on line 157.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->save_registro()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 04:44:59 --> Division by zero
+in APPPATH\Views\output_comparaHora.php on line 51.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_comparaHora', [], true)
+ 4 APPPATH\Controllers\Horatrabalhada.php(58): view('output_comparaHora', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->montaTurnoCall()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 04:45:15 --> Division by zero
+in APPPATH\Views\output_comparaHora.php on line 51.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_comparaHora', [], true)
+ 4 APPPATH\Controllers\Horatrabalhada.php(58): view('output_comparaHora', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->montaTurnoCall()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

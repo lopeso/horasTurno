@@ -10,8 +10,7 @@ class MTurno extends Model
     public Time $horaSaida;
     public Time $periodoDiurno;
     public Time $periodoNoturno;
-    var $turno;
-    
+    var $turno;  
 
     protected $table = 'registro_turno';
     protected $allowedFields = ['id',
@@ -20,9 +19,9 @@ class MTurno extends Model
                                 'HorasDiurnas',
                                 'HorasNoturnas', 
                                 'TotalTurno'];
-
-
 public function montaTurno(){
+
+    //variáveis presentes no arquivo
     $horaAtual = $_POST['horaEntrada'];
     $horaFinal = $_POST['horaSaida'];
     //$this->horaSaida = $_POST['horaSaida'];
@@ -120,13 +119,13 @@ public function comparaHoras(){
 }
 
 
-public function save_turno(){
+protected function save_turno(){
     $this->save([
-                'horaEntrada'  => $horarioEntrada->toTimeString(),
-                'HoraSaida'  => $horarioSaida->toTimeString(),
-                'HorasDiurnas' =>  $periodoDiurno->toTimeString(),
-                'HorasNoturnas' => $periodoNoturno->toTimestring(),
-                'TotalTurno' => $periodoTurno->toTimeString()
+                'horaEntrada'  => $this->horaEntrada,
+                'HoraSaida'  => $this->horaSaida,
+                'HorasDiurnas' =>  $this->periodoDiurno,
+                'HorasNoturnas' => $this->periodoNoturno(),
+                'TotalTurno' => $this->turno()
                 ]);
 
 }
