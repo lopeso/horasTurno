@@ -50,6 +50,7 @@ public function montaTurno(){
 }
 
 public function comparaHoras(){
+    //não confundir com horaTrabalhada->comparaHora() que é uma função que será removida
    // $horaAtual= new Time($horaInicial);
   //  $horaFinal= new Time($horaInicial);
     

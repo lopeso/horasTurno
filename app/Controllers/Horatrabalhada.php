@@ -20,29 +20,7 @@ class HoraTrabalhada extends Controller
         echo(View('input_hora'));
         //echo(view('output_hora'));
 }
-    
-    public function pegaHora(){
-       
-        if($this->request->getMethod() == "post"){
-            $horaEntrada = $this->request->getVar('horaEntrada');
-            $horaSaida = $this->request->getVar('horaSaida');
-           
-           // $data = [
-           //         'resultadoView' =>    $this->analisaHora($horaEntrada, $horaSaida),
-                    
-             //   ]; 
-           // ]]
-           $resultado = $this->analisaHora($horaEntrada, $horaSaida);
-           $data =['resultadoView'=> $resultado] ;
-            echo view('navBar');      
-            //echo(View('input_hora'));
-           return view('output_hora', $data);
-            //echo (view('page_analise', $data));    
-		
-         //return $comparaHora($horaEntrada, $horaSaida);           		
-        }
 
-    }
 
 
     public function montaTurnoCall(){
@@ -76,6 +54,7 @@ class HoraTrabalhada extends Controller
              $controle = 1;
          }
          $turno= $horaFinal->diff($horaInicial);
+
         //echo $horaInicial  . "<br>";
        // echo $horaFinal . "<br>";
        // echo $turno->format("%H:%I") . "  ";
@@ -114,18 +93,6 @@ class HoraTrabalhada extends Controller
         }
 
        
-      //  echo '<br>' . $periodoDiurno->toTimeString();
-       // echo '<br>' . $periodoNoturno->toTimeString();
-        
-     
-
-        //monta o objeto turno
-        // $expediente = new Registros();
-        // $expediente->horaEntrada = $horaInicial->getTimestamp();
-        // $expediente->horaSaida = $horaFinal->getTimestamp();
-        // $expediente->periodoDiurno = $periodoDiurno->getTimestamp();
-        // $expediente->periodoNoturno = $periodoNoturno->getTimestamp();
-        
         $data = [
             'horarioEntrada' =>$horaInicial,
             'horarioSaida'  => $horaFinal,
@@ -140,7 +107,28 @@ class HoraTrabalhada extends Controller
 
     }   
 
- 
+    public function pegaHora(){
+       
+        if($this->request->getMethod() == "post"){
+            $horaEntrada = $this->request->getVar('horaEntrada');
+            $horaSaida = $this->request->getVar('horaSaida');
+           
+           // $data = [
+           //         'resultadoView' =>    $this->analisaHora($horaEntrada, $horaSaida),
+                    
+             //   ]; 
+           // ]]
+           $resultado = $this->analisaHora($horaEntrada, $horaSaida);
+           $data =['resultadoView'=> $resultado] ;
+            echo view('navBar');      
+            //echo(View('input_hora'));
+           return view('output_hora', $data);
+            //echo (view('page_analise', $data));    
+		
+         //return $comparaHora($horaEntrada, $horaSaida);           		
+        }
+
+    }
 
     public function save_registro(){
     //parse_str($_SERVER['QUERY_STRING'], $_GET); 
