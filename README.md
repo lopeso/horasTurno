@@ -1,85 +1,231 @@
-Basta coloca-lo na pasta do servidor,
-alterar no arquivo App/Config/App.php
+# horaTrabalhada
+
+## Cálculo básico de período de trabalho
+
+
+```
 public string $baseURL = 'http://local.horatrabalhada.com';
+```
+### Instalação XAMPP
 
+```
+Após baixar o arquivo, extrair-lo na pasta do servidor, alterar no
+arquivo App/Config/App.php
+```
+```
+Configurar virtual hosts windows: C:\Windows\System32\drivers\etc
+adcionar linha:
+127.0.0.1 local.horatrabalhada.com
+```
+## 1.
 
-configurar virtual hosts windows:
-pasta 
-C:\Windows\System32\drivers\etc
-adcionar linha
-127.0.0.1		local.horatrabalhada.com
+## 3.
 
-C:\xampp\apache\conf\extra\httpd-vhosts.conf
-adcionar:
-<VirtualHost *:80>
-    ServerAdmin webmaster@local.horatrabalhada.com
-    DocumentRoot "C:/xampp/htdocs/horasTurno/public"
-    ServerName local.horatrabalhada.com
-    ErrorLog "logs/horatrabalhada.com-error.log"
-    CustomLog "logs/horatrabalhada.com-access.log" common
-</VirtualHost>
+## 2.
 
-Importar também o SQL que está aqui também. 
+```
+C:\xampp\apache\conf\extra\httpd-vhosts.conf adcionar:
+```
+```
+2
+```
 
-REQUISITOS:
+```
+Guia de Instalação máquina bitnami codeigniter 4
+Guia instalação codeigniter 4 site oficial
+```
+```
+diretório raíz do projeto & tabela bancohoras
+```
+### MySQL - Opcional
 
-# CodeIgniter 4 Framework
+```
+Importar também o SQL que está na raíz do
+projeto,
+-Caso não aconteça a importação realize a
+criação de um banco
+chamado bancodeHora e tente novamente.
+```
+```
+Acessar em http://local.horatrabalhada.com
+```
+```
+Caso queira utilizar banco de dados na sua
+implementação do projeto, é possível acessar o
+método de leitura em:
+model: MTurno::read_registros
+Por meio do controller:
+Horatrabalhada->read_registros
+```
+```
+3
+```
 
-## What is CodeIgniter?
+```
+Responsável por acessar o model podendo criar objetos
+do tipo Turno que são usados nas operações de
+comparação que ocorrem nos models.
+```
+```
+HoraTrabalhada->montaTurnoCall()
+```
+```
+Implementa a comparação de horas verificando
+os valores de da hora de entrada e classificando como
+horas diurnas ou noturnas, adcionando neste momento
+os minutos referentes a diferença do período até a
+primeira hora de trabalho concluída. Será explicado no
+slide 8.
+Existem também algumas funções que não estão
+sendo utilizadas que serviram como base para o
+aprendizado necessário para a resolução do problema..
+horasTurno/app/Controllers/Horatrabalhada.php
+```
+### /app/Controllers/Horatrabalhada.php
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+```
+4
+```
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+```
+Página inicial, onde é possível receber os valores de
+entrada e saída do turno para o cálculo que será realizado.
+```
+```
+Controller
+-HoraTrabalhada.php/index()
+horasTurno/app/Views/input_hora.php
+```
+Call
+–horaTrabalhada/montaTurnoCall()
+Recebendo valores de
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+#### _$POST[‘$horaEntrada’, ‘$horaSaida’];
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+```
+View
+```
+#### -inputHora.php
 
-## Important Change with index.php
+```
+Relógio utiliza Jquery na implementação
+```
+### HoraTrabalhada/index
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+```
+5
+```
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+```
+Página inicial, onde é possível receber os valores de
+entrada e saída do turno para o cálculo que será realizado.
+```
+```
+Controller
+HoraTrabalhada.php/montaTurnoCall()
+Acessa o model MTurno, possibilitando a criação do objeto.
+horasTurno/app/Controllers/Horatrabalhada.php
+```
+Call
 
-**Please** read the user guide for a better explanation of how CI4 works!
+#### -FUTURAMENTE
 
-## Repository Management
+```
+View
+navbar
+```
+#### output_comparaHora.php
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+```
+horasTurno/app/Views/output_comparaHora.php
+```
+### HoraTrabalhada/montaTurnoCall()
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+```
+6
+```
 
-## Contributing
+Responsável por implementar o objeto turno, por se tratar de um
+Model, já existe. Uma
 
-We welcome contributions from the community.
+```
+horasTurno/app/Controllers/Horatrabalhada.php
+```
+Métodos:
+**montaTurno(){}:
+comparaHoras(){}**
+save_turno(){};*
+loadAllTurnos(){};
+analiseHora(){};
+classificaHora();
+pegaHora();*;
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+```
+Atributos:
+Time horaEntrada
+Time horaSaida
+Time PeriodoDiurno
+Time PeriodoNoturno
+Var turno
+```
+```
+horasTurno/app/Models/MTurno.php
+```
+### HoraTrabalhada/index/app/Models/MTurno.php
 
-## Server Requirements
+```
+7
+```
 
-PHP version 7.4 or higher is required, with the following extensions installed:
+```
+MTurno::comparaHoras()
+```
+```
+Implementa a comparação de horas
+verificando os valores de da hora de entrada e
+saída classificando-as como horas diurnas ou
+noturnas, adicionando neste momento os minutos
+referentes a diferença do período até a primeira
+hora de trabalho concluída,
+Após isso acontece um loop onde é
+adicionado 1 a cada hora até chegarmos no horário
+final e também classificando como horas noturnas
+e diurnas.
+Por fim o algoritmo realiza algumas
+operações utilizando comprações entre objetos
+Time e objetos DateTime que são atributos da
+classe Turno;
+```
+```
+horasTurno/app/Models/MTurno.php
+```
+### /app/models/MTurno::montaTurno()
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+```
+8
+```
 
-> **Warning**
-> The end of life date for PHP 7.4 was November 28, 2022. If you are
-> still using PHP 7.4, you should upgrade immediately. The end of life date
-> for PHP 8.0 will be November 26, 2023.
+### Algoritmo de comparação
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+```
+9
+```
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+### Algoritmo de comparação
+
+```
+10
+```
+
+#### Qualquer dúvida
+
+#### henriquelopes@artebodoque.com
+
+#### 32988055272
+
+#### Henrique Lopes
+
+```
+11
+```
 
