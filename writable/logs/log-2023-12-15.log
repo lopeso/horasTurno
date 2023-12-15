@@ -1,0 +1,78 @@
+CRITICAL - 2023-12-15 00:17:05 --> syntax error, unexpected token "."
+in APPPATH\Views\navBar.php on line 62.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('navBar', [], true)
+ 3 APPPATH\Controllers\Horatrabalhada.php(18): view('navBar')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 00:17:18 --> syntax error, unexpected token "."
+in APPPATH\Views\navBar.php on line 62.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('navBar', [], true)
+ 3 APPPATH\Controllers\Horatrabalhada.php(18): view('navBar')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 00:17:46 --> fopen() expects at least 2 arguments, 1 given
+in APPPATH\Views\navBar.php on line 62.
+ 1 APPPATH\Views\navBar.php(62): fopen('../README.md')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\navBar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('navBar', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(18): view('navBar')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 00:18:08 --> fread() expects exactly 2 arguments, 1 given
+in APPPATH\Views\navBar.php on line 62.
+ 1 APPPATH\Views\navBar.php(62): fread('../README.md')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\navBar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('navBar', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(18): view('navBar')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 00:18:58 --> fread(): Argument #1 ($stream) must be of type resource, string given
+in APPPATH\Views\navBar.php on line 62.
+ 1 APPPATH\Views\navBar.php(62): fread('../README.md', 'r')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\horasTurno\\app\\Views\\navBar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('navBar', [], true)
+ 5 APPPATH\Controllers\Horatrabalhada.php(18): view('navBar')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 00:19:12 --> syntax error, unexpected token "."
+in APPPATH\Views\navBar.php on line 62.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('navBar', [], true)
+ 3 APPPATH\Controllers\Horatrabalhada.php(18): view('navBar')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 00:37:20 --> Undefined array key "horaEntrada"
+in APPPATH\Models\MTurno.php on line 26.
+ 1 APPPATH\Models\MTurno.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "horaEntrada"', 'C:\\xampp\\htdocs\\horasTurno\\app\\Models\\MTurno.php', 26)
+ 2 APPPATH\Controllers\Horatrabalhada.php(129): App\Models\MTurno->montaTurno()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->montaTurnoCall()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 00:39:43 --> Division by zero
+in APPPATH\Views\output_comparaHora.php on line 51.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('output_comparaHora', [], true)
+ 4 APPPATH\Controllers\Horatrabalhada.php(137): view('output_comparaHora', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\HoraTrabalhada->montaTurnoCall()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HoraTrabalhada))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

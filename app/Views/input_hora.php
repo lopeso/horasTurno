@@ -5,7 +5,7 @@
 <div class="valign-wrapper">
     <div class="col s4">
     <?php
-          echo form_open('horaTrabalhada/comparaHora'); ?>
+          echo form_open('horaTrabalhada/montaTurnoCall'); ?>
           <label for="horaEntrada">Hora entrada</label>
           <?php
           

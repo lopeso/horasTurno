@@ -55,8 +55,12 @@ echo form_open('horaTrabalhada/save_registro/', $atributos);
         ?>
         <div class="container row">
           <div class="progress col s8 right ">
-            <label for="barra">Horas Diurnas</label>
-            <div class="determinate" id="barra" style="width: <?= $progresso ?>"></div>
+           
+          
+               <div class="determinate tooltipped" data-tooltip="período diurno: <?= $progresso ?> do periodo trabalhado." id="barra" style="width: <?= $progresso ?>"> 
+
+                
+               
           </div>
       </div>
       </div>
@@ -66,20 +70,12 @@ echo form_open('horaTrabalhada/save_registro/', $atributos);
       
       </div>
 <script type="text/javascript">
-
-var slider = document.getElementById('test-slider');
-  noUiSlider.create(slider, {
-   start: [20, 80],
-   connect: true,
-   step: 1,
-   orientation: 'horizontal', // 'horizontal' or 'vertical'
-   range: {
-     'min': 0,
-     'max': 100
-   },
-   format: wNumb({
-     decimals: 0
-   })
+ $(document).ready(function(){
+    $('.tooltipped').tooltip();
   });
+
+
+
+ 
 
 </script>

@@ -18,17 +18,91 @@
     </head>
     <body class="color: grey lighten-4">
         
-  <nav>
+    <nav class="blue-grey">
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo right col s8">horaTrabalhada</a>
-     
-    
-      <!-- <div class="col s4">
-        <a href="#!" class="breadcrumb">input</a>
-        <a href="#!" class="breadcrumb">process</a>
-        <a href="#!" class="breadcrumb white-text">out</a>
- -->
+      <a href="<?= site_url() ?>" class="brand-logo right">horaTrabalhada</a>
+      <ul id="nav-mobile" class="left">
+   
+        <li><a href="collapsible.html"><a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+      </a></li>
+      </ul>
     </div>
   </nav>
-  
+
+<ul id="slide-out" class="sidenav">
+    <br>
+      
+      <li><a class="waves-effect waves-light btn blue-grey lighten-3 " href="<?= site_url()?>"  ><i class="material-icons black-text">blur_on</i>Registrar</a></li>
+      <!-- <li><a class="waves-effect waves-light btn blue-grey lighten-3 " href="<?php site_url() . '/horaTrabalhada/validacao'; ?>" ><i class="material-icons black-text">blur_circular</i>Validadores</a></li>     -->
+      <li><a class="waves-effect waves-light btn blue-grey lighten-3 modal-trigger" href="#modal1<?php //php site_url().'/horaTrabalhada/read_registros' ?>" ><i class="material-icons black-text">blur_linear</i>Ler Registros</a></li>
+      
+      <li><div class="user-view">
+      <div class="background blue-grey lighten-5">
+        <!-- <img class="responsive-img" src="https://foconaproducao.com.br/wp-content/uploads/2020/01/tempo-de-ciclo-takt-time-lead-time.jpg"> -->
+        
+         
+      </div>
+        <a href="#user"><img class="circle responsive-img" src="https://img.freepik.com/premium-photo/3d-head-woman-human-artificial-intelligence-ai-generated-profile-future-tech-machine-learning-engineering-abstract-face-futuristic-digital-transformation-person-blue-background_590464-162316.jpg"></a>
+       
+      </div>
+    </li>
+      <li><div class="divider"></div></li> 
+      <li><a class="subheader">Sobre</a></li>
+      <li><a class="waves-effect modal-trigger"  href="#modal2">READ.ME</a></li>
+
+
+      <li><a href="#name" class="waves-effect"><span class="  text-lighten-2 name"><span>Henrique Lopes <span class="right">@2023</span></span></a></li>
+      <li><a href="mailto:henriquelopes@artebodoque.com? subject=subject text" ><span class="blue-text"> henriquelopes@artebodoque.com</span></a></li>
+
+</ul>
+
+      
+  <div id="modal2" class="modal modal-fixed-footer" >
+    <div class="modal-content">
+    <p class="center">README - **ainda melhorando</p>
+    <?php 
+        echo readfile("../README.md");
+    ?>
+
+      <div class="row ">
+        <div class="col s8 ">
+          <img class="responsive-img "src=""/>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer" >
+    <div class="modal-content">
+    <p class="center">Ainda trabalhando nesta funcionalidade.</p>
+    <p class="center">Ajude-me a melhorar este código pelo github, ou crie apartir dele!</p>
+
+      <div class="row ">
+        <div class="col s8 ">
+          <img class="responsive-img "src=""/>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+          
+
+
+  <script type="text/javascript">
+
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.modal').modal();
+  });
+      
+    </script>
 

@@ -4,8 +4,10 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use CodeIgniter\I18n\Time;
 use CodeIgniter\Controller\Registros;
-use App\Models\Turno;
+
+use App\Models\MTurno;
 use DateTime;
+
 
 class HoraTrabalhada extends Controller
 {
@@ -17,7 +19,7 @@ class HoraTrabalhada extends Controller
         
         echo(View('input_hora'));
         //echo(view('output_hora'));
-    }
+}
     
     public function pegaHora(){
        
@@ -50,8 +52,6 @@ class HoraTrabalhada extends Controller
         // $horaEntrada = ;
         //    $horaSaida = ;
         
-
-        $controle = 0;
         $diferencaMinutosIniciais = 60 - $horaInicial->getMinute();
         //echo '<br>' . $horaInicial->getMinute();
         $horaAtual= new Time($horaInicial);
@@ -105,11 +105,11 @@ class HoraTrabalhada extends Controller
      
 
         //monta o objeto turno
-        $expediente = new Turno();
-        $expediente->horaEntrada = $horaInicial->getTimestamp();
-        $expediente->horaSaida = $horaFinal->getTimestamp();
-        $expediente->periodoDiurno = $periodoDiurno->getTimestamp();
-        $expediente->periodoNoturno = $periodoNoturno->getTimestamp();
+        // $expediente = new Registros();
+        // $expediente->horaEntrada = $horaInicial->getTimestamp();
+        // $expediente->horaSaida = $horaFinal->getTimestamp();
+        // $expediente->periodoDiurno = $periodoDiurno->getTimestamp();
+        // $expediente->periodoNoturno = $periodoNoturno->getTimestamp();
         
         $data = [
             'horarioEntrada' =>$horaInicial,
@@ -117,29 +117,39 @@ class HoraTrabalhada extends Controller
             'periodoDiurno' => $periodoDiurno,
             'periodoNoturno'=> $periodoNoturno,
             'periodoTurno'  => $turno,
-            'turno'         => $expediente
-        ];
-     
+            //'turno'         => $expediente
+        ];   
        // var_dump($dia);
-        echo view ('navBar');
-        
+         echo view ('navBar');      
         return view('output_comparaHora', $data);
 
-        
-}
+    }   
+public function montaTurnoCall(){
+    $turno = model(MTurno::Class);
+    $turno->montaTurno();
+    $data = [ 'horarioEntrada' =>$turno->horaEntrada,
+             'horarioSaida' =>$turno->horaSaida,
+             'periodoTurno' => $turno->turno,
+             'periodoDiurno' =>$turno->periodoDiurno,
+             'periodoNoturno' =>$turno->periodoNoturno
+             ];
+        //    ($turno);
+    return view('navBar') . view('output_comparaHora', $data);
+  //  var_dump($turno->turno->h);
+} 
 
     public function save_registro(){
     //parse_str($_SERVER['QUERY_STRING'], $_GET); 
-        var_dump($_POST);    
+        //var_dump($_POST);    
     $treta = $this->request->getVar('horasNoite');
     $treta = $this->request->getVar('horarioEntrada');    
-    var_dump($treta);
+   // var_dump($treta);
         $horaEntrada = $this->request->getVar('horaEntrada');
         $horaSaida = $this->request->getVar('horarioSaida');
         //echo $data['horarioEntrada'];
         if($this->request->getMethod() == "get"){
            
-           $model = model(Turno::class);
+           $model = model(MTurno::class);
             
         //     $treta= $model->save([
         //         'horaEntrada'  => $horarioEntrada->toTimeString(),
@@ -171,10 +181,10 @@ class HoraTrabalhada extends Controller
     
         }
     public function read_registros(){
-        $model = model(Turno::Class); //cria o objeto time para possibilitar operações na view
+        $model = model(MTurno::Class); //cria o objeto time para possibilitar operações na view
         $data['registro'] = $model->loadAllTurnos();
-            return view('registro_output', $data) . view('input_hora');
-        }
+        return view('navBar') . view('registro_output', $data) . view('input_hora');
+    }
     
     
     public function analisaHora($horaEntrada, $horaSaida){
