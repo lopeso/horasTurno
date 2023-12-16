@@ -47,11 +47,12 @@ echo form_open('horaTrabalhada/save_registro/', $atributos);
         
         </div>
         <?php
+        $progresso = $periodoTurno->h *60 + $periodoTurno->i;
+        $montaperiodo = ($periodoDiurno->getHour() * 60 + $periodoDiurno->getMinute())* 100;
+        $progresso = $montaperiodo/$progresso;
+        $progresso =  round($progresso, 2) . "%";
         
-        $progresso = $periodoNoturno->getHour()/$periodoTurno->h;
-        $progresso =  intval(100 -($progresso*100)) . "%";
-        
-        //echo $progresso;
+       // echo $progresso;
         ?>
         <div class="container row">
           <div class="progress col s8 right ">
